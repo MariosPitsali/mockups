@@ -1,0 +1,51 @@
+.landing-page{
+    position:relative;
+}
+
+.central-image{
+    width:200px;
+}
+
+#image-1{
+    display:inline-block;
+    position:absolute;
+    top:100px;
+    left:25px;
+    z-index:0;
+}
+#image-2{
+    display:inline-block;
+    position:absolute;
+    top:220px;
+    left:75px;
+    z-index:1;
+}
+#image-3{
+    display:inline-block;
+    position:absolute;
+    top:150px;
+    left:125px;
+    z-index:2;
+}
+
+#image-2:hover{
+    z-index:5;
+    transform:scale(2,2);
+    transition:1s;
+    transition-timing-function:ease-in-out;
+}
+
+#image-3:hover{
+    z-index:5;
+    transform:scale(2,2);
+    transition:1s;
+    transition-timing-function:ease-in-out;
+}
+
+#image-1:hover{
+    z-index:5;
+    top:10px;
+    left:525px;
+    transition:1s;
+    transition-timing-function:ease-in-out;
+}
