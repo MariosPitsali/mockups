@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<title>Document</title>
-    <style type="text/css">
-        strong { font-size:20px;}
+<style type="text/css">strong { font-size:16px;}
 		.category-featured-product-image {opacity:1; z-index:2; position:relative;}
         .category-featured-product-image img {margin-top:8%; margin-bottom:8%;}
-		.alert-heading {background-color:#d2232a; color:white; font-weight:900;width:60%; padding:32px;}
+		.alert-heading {background-color:#d2232a; color:white; font-weight:600;width:60%; padding:32px;}
         .price-and-link {transition:0.5s;}
 		.intro-students-h2{ text-align:center; display:inline-block;}
 		.students-correct-statement{ color: #008cde;}
@@ -15,7 +9,7 @@
         .category-featured-product:hover >.price-and-link { box-shadow:0px 0px 15px #018cde;}
         .category-featured-product:hover .category-featured-product-description{ box-shadow:0px 0px 15px black;}
         .category-featured-product-description {transition:0.8s; border-radius:25px; color:white!important;}
-        .category-featured-product {margin:45px; width:210px; transition:0.8s; transition-timing-function:ease-in-out;}
+        .category-featured-product {margin:45px; width:200px; transition:0.8s; transition-timing-function:ease-in-out;}
         .category-featured-products {margin:50px;}
         .category-preview {width:700px;}
 		.category-preview:hover #category-preview-bn-button-students{box-shadow:0px 0px 15px #d2232a;}
@@ -36,13 +30,15 @@
         #students-floating-2{ position:absolute; top:100px; right:30px;}
         #students-floating-3 {position:relative; top:150px;}
         #students-floating-4 {position:relative; top:100px; left:55%;}
-.hover-erase-span{ animation:line-t 4s infinite; font-weight:600; font-size:20px;}
-        .hover-strong-span { font-size:20px; color: #008cde; font-weight:900; animation: mymove 8s;}
-        .hover-intro-students {transition-timing-function:ease-in-out;}
+.hover-erase-span{ text-decoration:line-through; font-weight:600; font-size:14px;}
+        .hover-strong-span { font-size:14px; color: #008cde; font-weight:900; animation: mymove 10s; display:block; box-shadow:0px 0px 6px #008cde; padding:5px;}
+        .hover-intro-students {transition-timing-function:ease-in-out; font-size:16px;}
         .hover-intro-students{ text-align:center; line-height:2.2;}
-        .students-statement-intro { padding:10px; border:1px solid black; width:50%; margin:10px; display:inline-block;}
-        .mymarket-statement-students {color:#008cde; font-weight:1100;}
+        .students-statement-intro { padding:10px; width:50%; margin:10px; display:inline-block;}
         .strong-red {font-size:20px;}
+.hover-intro-students-arrow img{transition:1s ease-in-out; position:absolute; top:30px; right:60px; width:80px; }
+.hover-intro-students-arrow:hover img{background:#008cde; border-radius:30px;opacity:0.8;}
+        .hover-intro-students-arrow:hover {width:160px;}
         strong.strong-red{color:#d2232a;}
         @keyframes mymove{
             from{opacity:0;} 
@@ -53,33 +49,29 @@
             to { text-decoration: line-through;}
         }
 </style>
-</head>
-<body>
-	
-</body>
-</html>
-
 <div class="hover-intro-students">
-<div class="students-statement-intro"><span class="hover-erase-span">Η φοιτητική ζωή έχει πολύ ελεύθερο χρόνο.</span><span class="hover-strong-span"><br /> Η φοιτητική ζωή δε σου αφήνει χρόνο για πολλά.</span></div>
+<div class="hover-intro-students-arrow"><a href="#buy-now-students" title="Δες τα προϊόντα!"><img alt="" src="https://cdn.mymarket.gr/cdn/farfuture/a8S9on7R9RI50efBdTNQrgmfe66GSVInbFojv9F29h4/1583498180/sites/default/files/inline-images/arrow_down.png" /></a></div>
 
-<div class="students-statement-intro"><span class="hover-erase-span">Έχει χρόνο να περιμένεις σε ουρές.</span><span class="hover-strong-span"><br /> <strong class="strong-red">ΘΕΛΕΙΣ</strong> να κάνεις τα online φώνια σου εύκολα και γρήγορα.</span></div>
+<div class="students-statement-intro"><span class="hover-erase-span">Η φοιτητική ζωή έχει πολύ ελεύθερο χρόνο.</span><br />
+<span class="hover-strong-span">Η φοιτητική ζωή δε σου αφήνει χρόνο για πολλά.</span></div>
 
-<div class="students-statement-intro"><span class="hover-erase-span">Τα ψώνια σου δεν επείγουν.</span><span class="hover-strong-span"> <br /><strong class="strong-red">ΘΕΛΕΙΣ</strong> να ξέρεις ότι η παραγγελία σου θα φτάσει την ώρα και τη μέρα που το συμφώνησες... γιατί έχεις και διάβασμα.</span></div>
+<div class="students-statement-intro"><span class="hover-erase-span">Έχεις χρόνο να περιμένεις σε ουρές.</span><br />
+<span class="hover-strong-span"><strong class="strong-red">ΘΕΛΕΙΣ</strong> να κάνεις τα online φώνια σου εύκολα και γρήγορα.</span></div>
 
-<div class="students-statement-intro"><span class="hover-erase-span">Έχεις χρόνο να μαγειρεύεις κάθε μέρα.</span><br /><span class="hover-strong-span"> <strong class="strong-red">ΘΕΛΕΙΣ</strong> γρήγορες λύσεις φαγητού, γιατί ο νεροχύτης έχει γεμίσει πιάτα.</span></div>
+<div class="students-statement-intro"><span class="hover-erase-span">Τα ψώνια σου δεν επείγουν.</span><br />
+<span class="hover-strong-span"><strong class="strong-red">ΘΕΛΕΙΣ</strong> να ξέρεις ότι η παραγγελία σου θα φτάσει την ώρα και τη μέρα που το συμφώνησες... γιατί έχεις και διάβασμα.</span></div>
+
+<div class="students-statement-intro"><span class="hover-erase-span">Έχεις χρόνο να μαγειρεύεις κάθε μέρα.</span><br />
+<span class="hover-strong-span"><strong class="strong-red">ΘΕΛΕΙΣ</strong> γρήγορες λύσεις φαγητού, γιατί ο νεροχύτης έχει γεμίσει πιάτα.</span></div>
 
 <div class="students-statement-intro"><span class="hover-strong-span">Και φυσικά, <strong class="strong-red">ΘΕΛΕΙΣ</strong> να έχεις χρόνο για τους φίλους σου, ξέρεις τα ψώνια της εβδομάδας και δε θέλεις να χάνεις χρόνο.</span></div>
 </div>
 
-<p class="mymarket-statement-students">Το <strong>Eshop MyMarket</strong> ξέρει τι θέλεις και είναι εδώ για σένα. Χιλιάδες προϊόντα, κομμένα και ραμμένα για τις ανάγκες σου, είτε σπουδάζεις κοντά είτε μακριά από το σπίτι σου, στις πιο οικονομικές τιμές και με εγγυημένα γρήγορη και συνεπή παράδοση, όπου εσύ θέλεις! Τα ψώνια σου είναι μόνο λίγα κλικ μακριά.</p>
+<p style="font-size:16px;"><strong>Το <strong>Eshop MyMarket</strong> ξέρει τι θέλεις και είναι εδώ για σένα. Χιλιάδες προϊόντα, κομμένα και ραμμένα για τις ανάγκες σου, είτε σπουδάζεις κοντά είτε μακριά από το σπίτι σου, στις πιο οικονομικές τιμές και με εγγυημένα γρήγορη και συνεπή παράδοση, όπου εσύ θέλεις! Τα ψώνια σου είναι μόνο λίγα κλικ μακριά.</strong></p>
 
-<p><strong><strong>&nbsp;</strong></strong></p>
+<div class="category-section-students" id="buy-now-students" style="position:relative; width:100%; box-sizing:border-box; height:auto; margin-bottom:20px; border:0px solid black;"><strong><strong><img class="absolute-pos-category-badge" id="my-foitites" src="images/landing_page_students/logo_6.png" /> </strong></strong>
 
-<p><strong><strong><meta charset="UTF-8" /> </strong></strong></p>
-
-<div class="category-section-students" style="position:relative; width:100%; box-sizing:border-box; height:auto; margin-bottom:20px; border:0px solid black;"><strong><strong><img class="absolute-pos-category-badge" id="my-foitites" src="images/landing_page_students/logo_6.png" /> </strong></strong>
-
-<div class="category-preview" style="width: 100%; display:inline-block; margin:30px; text-align:center;"><strong><strong><a href="https://eshop.mymarket.gr/artozacharoplasteio-snacks"><img alt="" src="images/landing_page_students/artozaxaroplasteio (1).png" style="width:55%;display:inline-block;" /></a><a href="https://eshop.mymarket.gr/artozacharoplasteio-snacks" id="category-preview-bn-button-students" style="
+<div class="category-preview" style="width: 100%; display:inline-block; margin:30px; text-align:center;"><strong><strong><a href="/trofima"><img alt="" src="images/landing_page_students/trofima_general.png" style="width:48%;display:inline-block;" /></a><a href="/trofima" id="category-preview-bn-button-students" style="
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -88,7 +80,78 @@
     color: white; font-weight:600;
     padding: 20px;
 width:60%;
-">Ψωνισε Σνακς &amp; Αρτοσκευάσματα</a></strong></strong></div>
+">Ψωνισε Τροφιμα</a></strong></strong></div>
+
+<div class="featured-products-students" style="width:100%; display:inline-block; text-align:center; vertical-align:top;">
+<h1 style="text-transform:uppercase; font-size:20px;">επιλεγουμε για εσενα</h1>
+
+<div class="category-featured-product" style="display:inline-block; text-align:center; height:auto;">
+<div class="category-featured-product-description" style="
+        margin-bottom: 20px;
+        background-color: #d2232a;
+        padding: 10px;
+        color: white;
+        font-weight: 600; font-size:14px;">Γρήγορα Γεύματα</div>
+
+<div class="category-featured-product-image" style="width:100%;"><strong><strong><a href="/trofima?sort_by=popularity&amp;items_per_page=40&amp;brand=Knorr-and-Uncle%20Ben%27s-and-My%20Gusto"><img src="images/landing_page_students/trofima_1.png" style="width:100%; transition:0.6s;" /></a></strong></strong></div>
+
+<div class="price-and-link" style="
+    box-sizing: content-box;
+    width: 100%;
+    text-align: left;background-color:#008cde; transition:0.6s;
+"><strong><strong><a href="/trofima?sort_by=popularity&amp;items_per_page=40&amp;brand=Knorr-and-Uncle%20Ben%27s-and-My%20Gusto" style="text-align:center; display:inline-block; padding:10px; color:white; text-transform:uppercase;">Αγορασε εδω</a></strong></strong></div>
+</div>
+
+<div class="category-featured-product" style="display:inline-block; text-align:center;">
+<div class="category-featured-product-description" style="
+    margin-bottom: 20px;
+    background-color: #d2232a;
+    padding: 10px;
+    color: white;
+    font-weight: 600; font-size:14px;
+">Ζυμαρικά</div>
+
+<div class="category-featured-product-image" style="width:100%;"><strong><strong><a href="/trofima/zymarika"><img src="images/landing_page_students/trofima_2.png" style="width:100%; transition:0.6s;" /></a></strong></strong></div>
+
+<div class="price-and-link" style="
+    box-sizing: content-box;
+    width: 100%;
+    text-align: left;background-color:#008cde;
+"><strong><strong><a href="/trofima/zymarika" style="display:inline-block; padding:10px; color:white; text-align:center; text-transform:uppercase;">Αγορασε εδω</a></strong></strong></div>
+</div>
+
+<div class="category-featured-product" style="display:inline-block; text-align:center;">
+<div class="category-featured-product-description" style="
+        margin-bottom: 20px;
+        background-color: #d2232a;
+        padding: 10px;
+        color: white;
+        font-weight: 600; font-size:14px;
+    ">Έτοιμα Φαγητά</div>
+
+<div class="category-featured-product-image" style="width:100%;"><a href="/katepsygmena-trofima?sort_by=offers&amp;items_per_page=40&amp;brand=Μπάρμπα%20Στάθης-and-Alfa"><img src="images/landing_page_students/trofima_3.png" style="width:100%; transition:0.6s;" /></a></div>
+
+<div class="price-and-link" style="
+    box-sizing: content-box;
+    width: 100%;
+    text-align: left;background-color:#008cde;
+"><a href="/katepsygmena-trofima?sort_by=offers&amp;items_per_page=40&amp;brand=Μπάρμπα%20Στάθης-and-Alfa" style="display:inline-block; padding:10px; color:white;text-align:center; text-transform:uppercase;">Αγορασε εδω</a></div>
+</div>
+</div>
+</div>
+
+<div class="category-section-students" style="position:relative; width:100%; box-sizing:border-box; height:auto; margin-bottom:20px; border:0px solid black;"><strong><strong><img class="absolute-pos-category-badge" id="my-foitites" src="images/landing_page_students/logo_6.png" /> </strong></strong>
+
+<div class="category-preview" style="width: 100%; display:inline-block; margin:30px; text-align:center;"><strong><strong><a href="/artozacharoplasteio-snacks"><img alt="" src="images/landing_page_students/artozaxaroplasteio (1).png" style="width:48%;display:inline-block;" /></a><a href="/artozacharoplasteio-snacks" id="category-preview-bn-button-students" style="
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: #d2232a;
+    color: white; font-weight:600;
+    padding: 20px;
+width:60%;
+">Ψωνισε Αρτοζαχαροπλαστειο &amp; Σνακς</a></strong></strong></div>
 <strong><strong> </strong></strong>
 
 <div class="featured-products-students" style="width:100%; display:inline-block; text-align:center; vertical-align:top;">
@@ -100,15 +163,15 @@ width:60%;
         background-color: #d2232a;
         padding: 10px;
         color: white;
-        font-weight: 600; font-size:14px;"><strong>Σνακς</strong></div>
+        font-weight: 600; font-size:14px;">Σνακς</div>
 
-<div class="category-featured-product-image" style="width:100%;"><strong><strong><a href="https://eshop.mymarket.gr/artozacharoplasteio-snacks/snak"><img src="images/landing_page_students/artozaxaroplasteio_1.png" style="width:100%; transition:0.6s;" /></a></strong></strong></div>
+<div class="category-featured-product-image" style="width:100%;"><strong><strong><a href="/artozacharoplasteio-snacks/snak"><img src="images/landing_page_students/artozaxaroplasteio_1.png" style="width:100%; transition:0.6s;" /></a></strong></strong></div>
 
 <div class="price-and-link" style="
     box-sizing: content-box;
     width: 100%;
     text-align: left;background-color:#008cde; transition:0.6s;
-"><strong><strong><a href="https://eshop.mymarket.gr/artozacharoplasteio-snacks/snak" style="text-align:center; display:inline-block; padding:10px; color:white; text-transform:uppercase;">Αγορασε εδω</a></strong></strong></div>
+"><strong><strong><a href="/artozacharoplasteio-snacks/snak" style="text-align:center; display:inline-block; padding:10px; color:white; text-transform:uppercase;">Αγορασε εδω</a></strong></strong></div>
 </div>
 
 <div class="category-featured-product" style="display:inline-block; text-align:center;">
@@ -118,15 +181,15 @@ width:60%;
     padding: 10px;
     color: white;
     font-weight: 600; font-size:14px;
-"><strong><strong>Σοκολάτες</strong></strong></div>
+">Σοκολάτες</div>
 
-<div class="category-featured-product-image" style="width:100%;"><strong><strong><img src="images/landing_page_students/artozaxaroplasteio_2.png" style="width:100%; transition:0.6s;" /></strong></strong></div>
+<div class="category-featured-product-image" style="width:100%;"><strong><strong><a href="/artozacharoplasteio-snacks/sokolates-gkofretes"><img src="images/landing_page_students/artozaxaroplasteio_2.png" style="width:100%; transition:0.6s;" /></a></strong></strong></div>
 
 <div class="price-and-link" style="
     box-sizing: content-box;
     width: 100%;
     text-align: left;background-color:#008cde;
-"><strong><strong><a href="https://eshop.mymarket.gr/artozacharoplasteio-snacks/sokolates-gkofretes" style="display:inline-block; padding:10px; color:white; text-align:center; text-transform:uppercase;">Αγορασε εδω</a></strong></strong></div>
+"><strong><strong><a href="/artozacharoplasteio-snacks/sokolates-gkofretes" style="display:inline-block; padding:10px; color:white; text-align:center; text-transform:uppercase;">Αγορασε εδω</a></strong></strong></div>
 </div>
 
 <div class="category-featured-product" style="display:inline-block; text-align:center;">
@@ -136,15 +199,87 @@ width:60%;
         padding: 10px;
         color: white;
         font-weight: 600; font-size:14px;
-    "><strong>Ψωμί του Τοστ</strong></div>
+    ">Ψωμί του Τοστ</div>
 
-<div class="category-featured-product-image" style="width:100%;"><img src="images/landing_page_students/artozaxaroplasteio_3.png" style="width:100%; transition:0.6s;" /></div>
+<div class="category-featured-product-image" style="width:100%;"><a href="/artozacharoplasteio-snacks/psomi-tou-tost"><img src="images/landing_page_students/artozaxaroplasteio_3.png" style="width:100%; transition:0.6s;" /></a></div>
 
 <div class="price-and-link" style="
     box-sizing: content-box;
     width: 100%;
     text-align: left;background-color:#008cde;
-"><a href="https://eshop.mymarket.gr/artozacharoplasteio-snacks/psomi-tou-tost" style="display:inline-block; padding:10px; color:white;text-align:center; text-transform:uppercase;">Αγορασε εδω</a></div>
+"><a href="/artozacharoplasteio-snacks/psomi-tou-tost" style="display:inline-block; padding:10px; color:white;text-align:center; text-transform:uppercase;">Αγορασε εδω</a></div>
+</div>
+</div>
+</div>
+
+<div class="category-section-students" style="position:relative; width:100%; box-sizing:border-box; height:auto; margin-bottom:20px; border:0px solid black;"><strong><strong><img class="absolute-pos-category-badge" id="my-foitites" src="images/landing_page_students/logo_6.png" /> </strong></strong>
+
+<div class="category-preview" style="width: 100%; display:inline-block; margin:30px; text-align:center;"><strong><strong><a href="/proino-rofimata-kafes"><img alt="" src="images/landing_page_students/prwino_general.png" style="width:48%;display:inline-block;" /></a><a href="/proino-rofimata-kafes" id="category-preview-bn-button-students" style="
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: #d2232a;
+    color: white; font-weight:600;
+    padding: 20px;
+width:60%;
+">Ψωνισε Καφέ, Δημητριακα &amp; Ροφηματα</a></strong></strong></div>
+<strong><strong> </strong></strong>
+
+<div class="featured-products-students" style="width:100%; display:inline-block; text-align:center; vertical-align:top;">
+<h1 style="text-transform:uppercase; font-size:20px;">επιλεγουμε για εσενα</h1>
+
+<div class="category-featured-product" style="display:inline-block; text-align:center; height:auto;">
+<div class="category-featured-product-description" style="
+        margin-bottom: 20px;
+        background-color: #d2232a;
+        padding: 10px;
+        color: white;
+        font-weight: 600; font-size:14px;">Καφές</div>
+
+<div class="category-featured-product-image" style="width:100%;"><strong><strong><a href="/proino-rofimata-kafes/kafes"><img src="images/landing_page_students/prwino_1.png" style="width:100%; transition:0.6s;" /></a></strong></strong></div>
+
+<div class="price-and-link" style="
+    box-sizing: content-box;
+    width: 100%;
+    text-align: left;background-color:#008cde; transition:0.6s;
+"><strong><strong><a href="/proino-rofimata-kafes/kafes" style="text-align:center; display:inline-block; padding:10px; color:white; text-transform:uppercase;">Αγορασε εδω</a></strong></strong></div>
+</div>
+
+<div class="category-featured-product" style="display:inline-block; text-align:center;">
+<div class="category-featured-product-description" style="
+    margin-bottom: 20px;
+    background-color: #d2232a;
+    padding: 10px;
+    color: white;
+    font-weight: 600; font-size:14px;
+">Δημητριακά</div>
+
+<div class="category-featured-product-image" style="width:100%;"><strong><strong><a href="/proino-rofimata-kafes/dimitriaka-vromi"><img src="https://cdn.mymarket.gr/cdn/farfuture/Kq8KCL92ehCRUoQbCKPdFDx7_ddrST-xanDZUgNAy88/1583500255/sites/default/files/inline-images/prwino_2.png" style="width:100%; transition:0.6s;" /></a></strong></strong></div>
+
+<div class="price-and-link" style="
+    box-sizing: content-box;
+    width: 100%;
+    text-align: left;background-color:#008cde;
+"><strong><strong><a href="/proino-rofimata-kafes/dimitriaka-vromi" style="display:inline-block; padding:10px; color:white; text-align:center; text-transform:uppercase;">Αγορασε εδω</a></strong></strong></div>
+</div>
+
+<div class="category-featured-product" style="display:inline-block; text-align:center;">
+<div class="category-featured-product-description" style="
+        margin-bottom: 20px;
+        background-color: #d2232a;
+        padding: 10px;
+        color: white;
+        font-weight: 600; font-size:14px;
+    ">Είδη Επάλειψης</div>
+
+<div class="category-featured-product-image" style="width:100%;"><a href="/proino-rofimata-kafes/eidi-epaleipsis"><img src="images/landing_page_students/prwino_3.png" style="width:100%; transition:0.6s;" /></a></div>
+
+<div class="price-and-link" style="
+    box-sizing: content-box;
+    width: 100%;
+    text-align: left;background-color:#008cde;
+"><a href="/proino-rofimata-kafes/eidi-epaleipsis" style="display:inline-block; padding:10px; color:white;text-align:center; text-transform:uppercase;">Αγορασε εδω</a></div>
 </div>
 </div>
 </div>
