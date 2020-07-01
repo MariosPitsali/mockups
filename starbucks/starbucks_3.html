@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>262545_rich</title>
+    <style>
+        
+        .starbucks-rich-body{ width:100%; text-align:center; font-size:14px; padding:16px; } 
+        .starbucks-rich-body .starbucks-rich-text{ width:350px; display:inline-block; vertical-align:top; text-align:left; font-weight:700; } 
+        .starbucks-rich-body .starbucks-rich-image{ width:50%; display:inline-block; } 
+        .starbucks-rich-image img{ width:350px; box-shadow:0px 0px 10px #211208; }
+        
+        @media only screen and (max-width: 768px) {
+            #starbucks-fade-in-logo{width:120px;}
+            .starbucks-moving-images {width:160px!important;}
+            .starbucks-rich-moving-container {display:none;}
+        }
+        
+        @keyframes moving-image-1{
+            from {top:30%; left 28%}
+            to {top:25%; left:19%; box-shadow:0px 0px 10px black;}
+        }
+        @keyframes moving-image-2{
+            from {z-index:1; top:57%; left:42%;}
+            to {top:60%; left:45%; box-shadow:0px 0px 10px black;}
+        }
+        @keyframes moving-image-3{
+            from {top:25%; left:48%;}
+            to {top:20%; left:60%; box-shadow:0px 0px 10px black;}
+        }
+        @keyframes fading-logo{
+            from {z-index:-1; top:30%; left:42%; opacity:0;}
+            to {z-index:3; opacity:1; }
+        }
+/*         radial-gradient(circle at center, #106e33 10%, #f9f9f9 50%) */
+        .starbucks-whole-body {background-color:#f9f9f9; text-align:center;}
+        .starbucks-rich-moving-container {position:relative; height:800px; width:100%;  padding:10px; box-sizing:border-box;}
+        h4 {font-size:20px;}
+        .starbucks-moving-images {transition:1s; transition-timing-function:ease-in-out; position:absolute; width:220px;}
+        #starbucks-moving-image-1 {z-index:0; top:30%; left:28%; animation-name:moving-image-1; animation-duration: 1.5s; animation-delay: 3s; animation-iteration-count: 1; animation-timing-function:ease-in-out; animation-fill-mode:forwards;}
+        #starbucks-moving-image-2 {z-index:1; top:57%; left:42%; animation-name:moving-image-2; animation-duration: 1.5s; animation-delay: 3s; animation-iteration-count: 1; animation-timing-function:ease-in-out; animation-fill-mode:forwards;}
+        #starbucks-moving-image-3 {z-index:2; top:25%; left:48%; animation-name:moving-image-3; animation-duration: 1.5s; animation-delay: 3s; animation-iteration-count: 1; animation-timing-function:ease-in-out; animation-fill-mode:forwards;}
+        #starbucks-fade-in-logo {z-index:-1; top:27%; left:42%; opacity:0; width:200px; animation-name:fading-logo; animation-duration: 1.5s; animation-delay: 2s; animation-iteration-count: 1; animation-timing-function:ease-in-out; animation-fill-mode:forwards;}
+    </style>
+    <div class="starbucks-whole-body">
+        <div class="starbucks-rich-moving-container">
+		<img class="starbucks-moving-images" id="starbucks-moving-image-1" src="https://eshop.mymarket.gr/images/Nestlé/262545.jpg" alt="" />
+        <img class="starbucks-moving-images" id="starbucks-moving-image-2" src="https://eshop.mymarket.gr/images/Nestlé/262545_1.jpg" alt="" />
+        <img class="starbucks-moving-images" id="starbucks-moving-image-3" src="https://eshop.mymarket.gr/images/Nestlé/262545_3.jpg" alt="" />
+        <img  class="starbucks-moving-images" id="starbucks-fade-in-logo" src="https://eshop.mymarket.gr/images/Nestlé/Starbucks-logo.png" alt="" />
+	</div>
+    <div class="starbucks-rich-body">
+        <div class="starbucks-rich-text">Με την εμπειρία 50 ετών στην αναζήτηση μοναδικών κόκκων καφέ, στη δημιουργία ιδιαιτερων χαρμανιών και στο  καρβουδισμα καταφέραμε να φτάσουμε εδώ: σε έναν δεύτερο τύπο espresso, εξαιρετικά ήπιο. Το ξεχωριστό καρβούρδισμα αυτών των ιδιαίτερων κόκκων από τη Λατινική Αμερική αναδεικνύει γλυκές νότες που διεγείρουν τις αισθήσεις. <br><br>Απαλός και ισορροπημένος, όταν συνδυαστεί με γάλα αναδεικνύει την γλυκιά πλευρά του, μετατρέποντας τα κλασσικά ροφήματα espresso σε ιδιαίτερα ήπια χωρίς έντονες νότες καβουρδίσματος.<br />
+<br />
+Ολοκληρωμένος με ήπιες νότες κακάο και καβουρδισμένων ξηρών καρπών που ισορροπούν την απαλή του γέυση.<br />
+&nbsp;</div>
+        <div class="starbucks-rich-image"><img alt="starbucks_blonde_gif" data-entity-type="file" data-entity-uuid="46b07133-e14c-48de-a44f-2d638034e7ec" data-image-style="original_optimized" src="https://cdn.mymarket.gr/cdn/farfuture/VSke-DaDNXCriNvtC6TGGadKmiL3HWE6UI3-Z9VB3hQ/1582541819/sites/default/files/inline-images/nestle_6.gif" /></div>
+</div>
+    </div>
+	
+</html>

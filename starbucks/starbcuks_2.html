@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>262545_rich</title>
+    <style>
+        @media only screen and (max-width: 768px) {
+            #starbucks-fade-in-logo{width:120px;}
+            .starbucks-moving-images {width:160px;!important}
+        }
+        .starbucks-rich-moving-container {position:relative; height:800px; width:100%; box-shadow: inset 0 0 1em 1em #086538; text-align:center; padding:50px; box-sizing:border-box;}
+        h4 {font-size:20px;}
+        .starbucks-moving-images {transition:1s; transition-timing-function:ease-in-out; position:absolute; border-radius:20px; width:220px;}
+        #starbucks-moving-image-1 {z-index:0; top:30%; left:28%;}
+        #starbucks-moving-image-2 {z-index:1; top:57%; left:42%;}
+        #starbucks-moving-image-3 {z-index:2; top:25%; left:48%;}
+        #starbucks-fade-in-logo {z-index:-1; top:30%; left:42%; opacity:0; width:200px;}
+        .starbucks-rich-moving-container:hover #starbucks-moving-image-1{top:25%; left:19%; box-shadow:0px 0px 10px black;}
+        .starbucks-rich-moving-container:hover #starbucks-moving-image-2{top:60%; left:45%; box-shadow:0px 0px 10px black;}
+        .starbucks-rich-moving-container:hover #starbucks-moving-image-3{top:20%; left:60%; box-shadow:0px 0px 10px black;}
+        .starbucks-rich-moving-container:hover #starbucks-fade-in-logo{z-index:3; opacity:1; }
+    </style>
+</head>
+<body>
+	<div class="starbucks-rich-moving-container">
+        <h4>
+            ΓΝΩΡΙΣΤΕ ΤΟΝ STARBUCKS BLONDE
+        </h4>
+		<img class="starbucks-moving-images" id="starbucks-moving-image-1" src="images/262545.jpg" alt="" />
+        <img class="starbucks-moving-images" id="starbucks-moving-image-2" src="images/262545_1.jpg" alt="" />
+        <img class="starbucks-moving-images" id="starbucks-moving-image-3" src="images/262545_3.jpg" alt="" />
+        <img  class="starbucks-moving-images" id="starbucks-fade-in-logo" src="images/Starbucks_logo.png" alt="" />
+	</div>
+</body>
+</html>

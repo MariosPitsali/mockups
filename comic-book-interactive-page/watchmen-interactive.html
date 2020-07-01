@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Watchmen Interactive Panel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,700;1,700&family=Coming+Soon&display=swap" rel="stylesheet">
+    <style>
+        .comic-book-row {width:100%}
+        .comic-book-panel{box-sizing:border-box; height:800px; position:relative; text-align:center; margin:1.5em; width:45%; display:inline-block; border:1px solid black;}
+        #panel-01 {background-image:url('images/transparent-night-sky.png');}
+        #panel-02 {background-color:black;}
+        .narration-block {font-family: 'Comic Neue', cursive; text-transform:uppercase; border:1px solid black;  padding:0.3em; background-color:#f3f7b6; display:inline-block; box-sizing:content-box; width:20%;position:absolute;}
+        .narration-block-text {font-family:inherit; background-color:#97c5d3; padding:0.2em; border:1px solid black; box-sizing:border-box; transition:1.2s;}
+        .comic-book-panel#panel-01 > img {width:50%; transition:2s ease; margin:2em;}
+        .comic-book-panel#panel-01:hover > img {width:60%;}
+        .comic-book-panel #narration-block-01 {position:absolute; top:5%; right:5%; }
+        .comic-book-panel #narration-block-02 {position:absolute; top:15%; left:5%;}
+        .comic-book-panel #narration-block-03 {position:absolute; bottom:15%; right:5%; transition:2.3s ease;}
+        .comic-book-panel:hover #narration-block-03 {position:absolute; bottom:25%; right:9%;}
+        .comic-book-panel:hover #narration-block-03 .narration-block-text{ font-weight:700;}
+        .comic-book-panel#panel-02 .narration-block-text {opacity:0; transition:2s ease;}
+        .comic-book-panel#panel-02:hover .narration-block-text,.comic-book-panel#panel-02:hover img {opacity:1;}
+        .comic-book-panel#panel-02 {background-color:white;}
+        .comic-book-panel#panel-02 > img {width:100%; opacity:0; transition:2s ease;}
+        .comic-book-panel#panel-02 narration-block {position:absolute; top:5%; right:10%;}
+    </style>
+</head>
+<body>
+    <div class="comic-book-row">
+        <div class="comic-book-panel" id="panel-01">
+        <div class="narration-block" id ="narration-block-01">
+            <div class="narration-block-text">Blake's different</div>
+        </div>
+        <div class="narration-block" id ="narration-block-02">
+            <div class="narration-block-text">He understands perfectly...</div>
+        </div>
+        <div class="narration-block" id ="narration-block-03">
+            <div class="narration-block-text">...and he doesn't care.</div>
+        </div>
+        <img src="images/Doctormanhattan.png" alt="" />
+    </div>
+    <div class="comic-book-panel" id="panel-02">
+        <div class="narration-block" id ="narration-block-01">
+            <div class="narration-block-text">And that's how my ass got dead. Or so they thought.</div>
+        </div>
+        <img src="images/manhattan_birth.jpg" alt="" />
+    </div>
+    </div>
+    
+</body>
+</html>
