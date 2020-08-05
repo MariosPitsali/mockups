@@ -3,11 +3,76 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>262300_rich</title>
-   
-
+     <style>
+         .starbucks-rich-body{
+             display:grid;
+             grid-template-columns: repeat(3, minmax(1fr,30%));
+             grid-template-rows: 300px 100px 100px;
+             grid-gap: 15px 10px;
+             height:600px;
+             width:900px;
+         }
+         
+         .grid-item {
+             box-sizing:border-box;
+             padding:.8em;
+             text-align:center;
+         }
+         .grid-text{
+             grid-column-start:1;
+             grid-row-start:1;
+             grid-column-end:3;
+             grid-row-end:2;
+         }
+         
+         .item-1{
+             grid-column-start:3;
+             grid-row-start:1;
+             grid-column-end:4;
+             grid-row-end:3;
+         }
+         .item-3{
+             grid-column-start:2;
+             grid-row-start:2;
+             grid-column-end:3;
+             grid-row-end:3;
+             opacity:0;
+             transition: 1s ease-in-out;
+         }
+         
+         .item-2{
+             grid-column-start:1;
+             grid-row-start:2;
+             grid-column-end:2;
+             grid-row-end:3;
+             opacity:0;
+             transition: 1s ease-in-out;
+         }
+         img.starbucks-images{
+             width:75%;
+         }
+         .starbucks-rich-body:hover .item-2,.starbucks-rich-body:hover .item-3{opacity:1; transform:scale(1.2,1.2)}
+         .starbucks-rich-body:hover .item-4 {opacity:1; }
+         .item-4{
+             grid-column-start:3;
+             grid-row-start:3;
+             grid-column-end:4;
+             grid-row-end:4;
+             vertical-align:middle;
+             opacity:0;
+             transition:1.5s ease-in-out;
+         }
+         @media only screen and (max-width: 600px) {
+              .starbucks-rich-body {
+                font-size:12px;
+              }
+			}
+    </style>
+    </head>
 	<div class="starbucks-rich-body">
-            <p>
-                Είναι τόσο απλό.
+            <div class='grid-item grid-text'>
+                <p>
+                    Είναι τόσο απλό.
 
 Ένα χαρμάνι από εξαιρετικής ποιότητας καβουρδισμένους κόκκους της Λατινικής Αμερικής με γυαλιστερή υφή και σκούρο καστανό χρώμα.
 
@@ -16,28 +81,22 @@
 Αυτός ο καφές είναι το ξεκίνημά μας, το πρώτο χαρμάνι που δημιουργήσαμε για εσάς το 1971.
 
 Ένα χαρμάνι που πραγματικά αντανακλά την αγάπη μας για τον καλό καφέ, εξαιρετικής γεύσης που μπορείτε να απολαύσετε σε μια κούπα καφέ, τόσο απλά.
-            </p>
+            <p style="margin-top:1em;font-weight:700;">Διατηρείται σε μέρος ξηρό και δροσερό.</p></div>
+        	<div class='grid-item item-1'>
+                <img class="starbucks-images" id="starbucks-image-initial" src="https://eshop.mymarket.gr/images/Nestlé/262300&262301.jpg" alt="" />
+        </div>
+        <div class='grid-item item-2'>
             <img class="starbucks-images" id="starbucks-image-1" src="https://eshop.mymarket.gr/images/Nestlé/262300.jpg" alt="" />
+        </div>
+        <div class='grid-item item-3'>
             <img class="starbucks-images" id="starbucks-image-2" src="https://eshop.mymarket.gr/images/Nestlé/262300_1.jpg" alt="" />
+        </div>
+        <div class='grid-item item-4'>
+           
+        </div>
+        <div class='grid-item item-5'>
             
+        </div>
     </div>
-     <style>
-      
-        .starbucks-rich-body {position:relative; width:100%; height:900px; background-image:url("https://eshop.mymarket.gr/images/Nestlé/262300&262301.jpg"); background-repeat:no-repeat; background-position:center; background-size:contain; transition-duration:1s; transition-timing-function:ease-in-out; text-align:center;}
-        .starbucks-rich-body:hover {background-color:white; background-image:none;}
-        .starbucks-rich-body #starbucks-image-1 {position:relative; right:10%;}
-        .starbucks-rich-body #starbucks-image-2{position:relative; left:10%;}
-        .starbucks-rich-body .starbucks-images{width:250px; opacity:0; transition:1.2s ease-in-out; display:inline-block; margin:35px;}
-        .starbucks-rich-body:hover .starbucks-images {opacity:1; transform:scale(1.3,1.3)}
-        .starbucks-rich-body:hover .invisible-heading {opacity:1;}
-        .starbucks-rich-body:hover {background-color:#f9f9f9; height:auto;}
-        .starbucks-rich-body >  p {opacity:0; transition:1.2s; text-align:center; display:inline-block;}
-         @media only screen and (max-width: 768px) {
-           img.starbucks-images {
-               display:None;
-           }
-}
-        .starbucks-rich-body:hover > p {opacity:1; margin-bottom:30px;}
-    </style>
 
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Flexbox</title>
+    <style>
+        .container {
+        	display:flex;
+            flex-direction:row;
+            flex-wrap:wrap;
+            width:100%;
+            transition:1s ease-in-out;
+            justify-content:space-evenly;
+        }
+        
+        .starb-image{
+          width:500px;
+          border:25px solid;
+          border-image-slice: 1;
+          border-image-source: conic-gradient(from 180deg at center, white , #578f60, orange, white)
+          ;
+          transition:1s ease-in-out;
+          transform:scale(0.6, 0.6);
+        }
+        
+        .container:hover .starb-image{
+            transform:scale(0.8,0.8);
+        }
+    </style>
+</head>
+<body>
+	<div class="container">
+		<img class="starb-image" src="images/262300.jpg" alt="" />
+        <img class="starb-image" src="images/262300_1.jpg" alt="" />
+        <p>Donec sollicitudin, urna eget gravida vulputate, ex nunc dapibus odio, nec cursus lorem libero in orci. Curabitur at tempus ante. Aenean ac varius odio, vitae aliquet leo. Ut posuere lectus nec varius viverra. Aliquam erat volutpat. Vestibulum quam felis, venenatis id eros a, pellentesque tincidunt lorem. Aliquam purus mauris, lobortis nec interdum ut, ultrices eu leo. Nulla et velit ut dui laoreet pharetra. Cras vel ullamcorper libero. Quisque sit amet laoreet quam, et mollis ex. Nunc finibus ipsum in nisi interdum, ac fermentum odio commodo. Cras ullamcorper mollis fermentum. Vivamus sagittis felis vel efficitur laoreet.</p>
+
+	</div>
+</body>
+</html>

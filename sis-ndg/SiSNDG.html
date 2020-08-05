@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>SiS Nescafe Dolce Gusto - Under Construction</title>
+  <style>
+    .sis-ndg-container {width:100%}
+    .sis-ndg-tiles {display:grid; grid-template-columns:1fr 1fr; grid-gap:3em; width:800px;}
+    .item-1{grid-column-start:1; grid-column-end:2;grid-row-start:1; grid-row-end:2;}
+    .item-2{grid-column-start:2; grid-column-end:3;grid-row-start:1; grid-row-end:2;}
+    .item-3{grid-column-start:1; grid-column-end:2;grid-row-start:2; grid-row-end:3;}
+    .item-4{grid-column-start:2; grid-column-end:3;grid-row-start:2; grid-row-end:3;}
+    .sis-ndg-tiles div > img:hover{transform:scale(1.2,1.2); z-index:100!important;}
+    .sis-ndg-tiles div > img {width:100%; padding:40px; z-index:0;}
+    .sis-ndg-tiles img {transition:1s ease-in-out; transform:skewY(5deg) rotateY(5deg); }
+  </style>
+</head>
+<body>
+  <div class="sis-ndg-container">
+    <div class="sis-ndg-tiles">
+    	<div class="item-1"><img src="images/12481_NDG_Photo_Booklet-1_2000x2000_v1.png" alt="" /></div>
+      <div class="item-2"><img src="images/12481_NDG_Photo_Booklet-2_2000x2000_v1.png" alt="" /></div>
+      <div class="item-3"><img src="images/12481_NDG_Photo_Booklet-3_2000x2000.png" alt="" /></div>
+      <div class="item-4"><img src="images/12481_NDG_Photo_Booklet-4_2000x2000.png" alt="" /></div>
+    </div>
+	</div>
+</body>
+</html>
