@@ -4,34 +4,71 @@
 	<meta charset="UTF-8" />
 	<title>SiS Nescafe Dolce Gusto - Under Construction</title>
   <style>
-    .sis-ndg-container {width:100%}
-    .sis-ndg-tiles {display:grid; grid-template-columns:1fr 1fr; grid-gap:3em; width:800px;}
+    .sis-ndg-container {width:900px;}
+    .sis-ndg-tiles {display:grid; grid-template-columns:1fr 1fr; grid-gap:3em; width:600px;}
     .item-1{grid-column-start:1; grid-column-end:2;grid-row-start:1; grid-row-end:2;}
     .item-2{grid-column-start:2; grid-column-end:3;grid-row-start:1; grid-row-end:2;}
     .item-3{grid-column-start:1; grid-column-end:2;grid-row-start:2; grid-row-end:3;}
     .item-4{grid-column-start:2; grid-column-end:3;grid-row-start:2; grid-row-end:3;}
+      #tile-image-1 {animation: tile-1-move 2s ; animation-delay: 0s; animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);}
+      #tile-image-2 {animation: tile-1-move 2s ; animation-delay: 2s; animation-timing-function: ease-out;}
+      #tile-image-3 {animation: tile-1-move 2s ; animation-delay: 4s; animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);}
+      #tile-image-4 {animation: tile-1-move 2s ; animation-delay: 6s; animation-timing-function: ease-out;}
     .sis-ndg-tiles div > img:hover{transform:scale(1.2,1.2); z-index:100!important;}
-    .sis-ndg-tiles div > img {width:100%; padding:40px; z-index:0;}
+    .sis-ndg-tiles div > img {width:100%; margin:20px; padding:20px; z-index:0;}
     .sis-ndg-tiles img {transition:1s ease-in-out; transform:skewY(5deg) rotateY(5deg); }
     .dolce-gusto-infographic {display:flex; padding:1em; margin:1em; flex-wrap:wrap; flex-direction:row; justify-content: space-around;align-items:center; align-content:center; border-left:2px solid black;  border-bottom:2px solid black;}
     .dolce-gusto-text {flex-grow:1; width:550px;}
     .dolce-gusto-thumb {flex-grow:2; width:250px; text-align:center;}
       .dolce-gusto-infographic > div {display:inline-block; margin:1em;}
       .dolce-gusto-infographic > div > img {width:40%; transition:1s ease-in-out;}
-      .dolce-gusto-infographic:hover > div > img {transform:scale(1.15,1.15);}
+      .dolce-gusto-infographic:hover > div > img {transform:scale(1.2,1.2);}
+      .ndg-feature-heading::after {content:""; text-align:center; border-bottom:2px solid black; display:block; width:5%; transition:.5s ease-in-out;}
+	  .ndg-rich-content > p:hover .ndg-feature-heading::after {width:15%;}
+      .ndg-feature-heading {display:block;}
+      .ndg-text-and-tiles {display:flex; align-content:center; justify-content:space-evenly; align-items:center; flex-wrap:wrap; transition:0.8s;}
+      @keyframes tile-1-move{
+          from {transform:skewY(5deg) rotateY(5deg);}
+          to {transform:scale(1.2,1.2);}
+      }
   </style>
 </head>
 <body>
   <div class="sis-ndg-container">
-    <div class="sis-ndg-tiles">
-    	<div class="item-1"><img src="images/12481_NDG_Photo_Booklet-1_2000x2000_v1.png" alt="" /></div>
-      <div class="item-2"><img src="images/12481_NDG_Photo_Booklet-2_2000x2000_v1.png" alt="" /></div>
-      <div class="item-3"><img src="images/12481_NDG_Photo_Booklet-3_2000x2000.png" alt="" /></div>
-      <div class="item-4"><img src="images/12481_NDG_Photo_Booklet-4_2000x2000.png" alt="" /></div>
+      <div class="ndg-text-and-tiles">
+          <div class="ndg-text">
+          	Lorem Ipsum
+          </div>
+        <div class="sis-ndg-tiles">
+            <div class="item-1"><img id ="tile-image-1" src="https://eshop.mymarket.gr/images/SiS_Dolce_Gusto/12481_NDG_Photo_Booklet-1_2000x2000_v1.png" alt="" /></div>
+          <div class="item-2"><img id ="tile-image-2" src="https://eshop.mymarket.gr/images/SiS_Dolce_Gusto/12481_NDG_Photo_Booklet-2_2000x2000_v1.png" alt="" /></div>
+          <div class="item-3"><img id ="tile-image-3" src="https://eshop.mymarket.gr/images/SiS_Dolce_Gusto/12481_NDG_Photo_Booklet-3_2000x2000.png" alt="" /></div>
+          <div class="item-4"><img id ="tile-image-4" src="https://eshop.mymarket.gr/images/SiS_Dolce_Gusto/12481_NDG_Photo_Booklet-4_2000x2000.png" alt="" /></div>
+        </div>
     </div>
       <div class="dolce-gusto-infographic">
-    	<div class="text-1 dolce-gusto-text">Aliquam ultrices urna nec elit porttitor, id gravida risus cursus. Suspendisse ac justo facilisis, elementum nibh quis, pellentesque est. Donec ac blandit turpis. Donec id efficitur augue. Pellentesque libero lectus, bibendum ut purus eu, posuere vehicula mi. Mauris id erat in elit lacinia vulputate vel quis urna. Nunc nec sem sed augue volutpat condimentum vel finibus ipsum. Vestibulum sed bibendum justo, ornare tempor massa.</div>
-        <div class="thumb-1 dolce-gusto-thumb"><img src="images/261502_1.jpg" alt="" /></div>
+    	<div class="text-1 dolce-gusto-text">
+            <div class="ndg-rich-content" style="padding:1em;">
+                <p><strong class="ndg-feature-heading">ΚΑΦΕΣ</strong> Ανακαλύψτε τον NESCAFÉ® Dolce Gusto® Espresso Intenso, έναν έντονο, μέτρια σκούρο καβουρδισμένο καφέ. Αυτός ο καφές που σερβίρεται σε μικρό φλυτζάνι (στα 50ml) χαρακτηρίζεται από νότες φρούτων και μπαχαρικών, έχει απαλό σώμα και πλούσια βελούδινη κρέμα. Απολαύστε τις νότες των καλοκαιρινών κόκκινων μούρων, που δημιουργούν διακριτικές πικάντικες αντιθέσεις με το πιπέρι των ροζ μούρων. Ένας espresso με μεσαία καβουρδισμένο χαρμάνι, γεμάτος τολμηρές αντιθέσεις.</p>
+
+                <p><br />
+                <strong class="ndg-feature-heading">ΓΕΥΣΗ</strong> Με τους ερμητικά σφραγισμένες κάψουλές μας, που διατηρούν τη φρέσκια γεύση του καφέ μας, θα απολαμβάνετε πλούσια αρωματικά ροφήματα κάθε φορά.
+                </p>
+
+                <p><br />
+                <strong class="ndg-feature-heading">ΠΟΙΟΤΗΤΑ</strong> Δημιουργήστε καφέ επαγγελματικής ποιότητας με το πάτημα ενός κουμπιού, χάρη στις μηχανές καφέ υψηλής πίεσης με πίεση αντλίας έως και 15 bar.
+                </p>
+
+                <p><br />
+                <strong class="ndg-feature-heading">ΕΥΚΟΛΙΑ</strong>Γρήγορη και εύκολη προετοιμασία σε λιγότερο από 1 λεπτό, με πάνω από 50 ροφήματα σε όλη τη σειρά Nescafé Dolce Gusto και Starbucks.
+                </p>
+
+                <p><br />
+                <strong class="ndg-feature-heading">ΒΙΩΣΙΜΟΤΗΤΑ</strong> Υπεύθυνος ποιοτικός καφές, που καλλιεργείται με σεβασμό στους παραγωγούς, τις κοινότητές τους και τον πλανήτη.
+                </p>
+            </div>
+        </div>
+        <div class="thumb-1 dolce-gusto-thumb"><img src="https://eshop.mymarket.gr/images/261502_1.jpg" alt="" /></div>
     </div>
 	</div>
     
