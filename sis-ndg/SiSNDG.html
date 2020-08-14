@@ -10,10 +10,10 @@
     .item-2{grid-column-start:2; grid-column-end:3;grid-row-start:1; grid-row-end:2;}
     .item-3{grid-column-start:1; grid-column-end:2;grid-row-start:2; grid-row-end:3;}
     .item-4{grid-column-start:2; grid-column-end:3;grid-row-start:2; grid-row-end:3;}
-      #tile-image-1 {animation: tile-1-move 2s ; animation-delay: 0s; animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);}
-      #tile-image-2 {animation: tile-1-move 2s ; animation-delay: 2s; animation-timing-function: ease-out;}
-      #tile-image-3 {animation: tile-1-move 2s ; animation-delay: 4s; animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);}
-      #tile-image-4 {animation: tile-1-move 2s ; animation-delay: 6s; animation-timing-function: ease-out;}
+      #tile-image-1 {animation: tile-1-move 4s ; animation-delay: 0s; animation-timing-function: ease-in-out;}
+      #tile-image-2 {animation: tile-1-move 4s ; animation-delay: 4s; animation-timing-function: ease-in-out;}
+      #tile-image-3 {animation: tile-1-move 4s ; animation-delay: 8s; animation-timing-function: ease-in-out;}
+      #tile-image-4 {animation: tile-1-move 4s ; animation-delay: 12s; animation-timing-function: ease-in-out;}
     .sis-ndg-tiles div > img:hover{transform:scale(1.2,1.2); z-index:100!important;}
     .sis-ndg-tiles div > img {width:100%; margin:20px; padding:20px; z-index:0;}
     .sis-ndg-tiles img {transition:1s ease-in-out; transform:skewY(5deg) rotateY(5deg); }
@@ -28,8 +28,9 @@
       .ndg-feature-heading {display:block;}
       .ndg-text-and-tiles {display:flex; align-content:center; justify-content:space-evenly; align-items:center; flex-wrap:wrap; transition:0.8s;}
       @keyframes tile-1-move{
-          from {transform:skewY(5deg) rotateY(5deg);}
-          to {transform:scale(1.2,1.2);}
+          0% {transform:skewY(5deg) rotateY(5deg);}
+          50% {transform:scale(1.2,1.2);}
+          100% {transform:skewY(5deg) rotateY(5deg);}
       }
   </style>
 </head>
