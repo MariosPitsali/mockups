@@ -19,10 +19,12 @@
             justify-content:center;
             align-items:center;
             height:auto;
+            transition:.6s ease-in-out;
         }
         .duck-thumbnail > img {
             display:block;
             width:80%;
+            transition:.6s ease-in-out;
         }
         
         .duck-thumbnail > h4 {
@@ -31,16 +33,22 @@
             color:white;
             padding:1rem;
             border-radius:8px;
-            font-size:1rem;
+            font-size:.8rem;
+        }
+        .duck-row-item:hover .duck-thumbnail > img { transform:scale(1.1,1.1);}
+        
+        a{
+            text-decoration:none;
+            text-align:center;
         }
     </style>
 </head>
 <body>
 	<div class="duck-products-row">
-		<div class="duck-row-item duck-item-1"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509006_1.jpg" alt="" /></div></div>
-        <div class="duck-row-item duck-item-2"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/512066_1.jpg" alt="" /></div></div>
-        <div class="duck-row-item duck-item-3"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/512483_1.jpg" alt="" /></div></div>
-        <div class="duck-row-item duck-item-4"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509007_1.jpg" alt="" /></div></div>
+		<div class="duck-row-item duck-item-1"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509006_1.jpg" alt="" /></div></a></div>
+        <div class="duck-row-item duck-item-2"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/512066_1.jpg" alt="" /></div></a></div>
+        <div class="duck-row-item duck-item-3"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/512483_1.jpg" alt="" /></div></a></div>
+        <div class="duck-row-item duck-item-4"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509007_1.jpg" alt="" /></div></a></div>
 	</div>
 </body>
 </html>
