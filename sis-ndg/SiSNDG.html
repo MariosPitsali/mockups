@@ -15,6 +15,9 @@
       #tile-image-2 {animation: tile-1-move 4s ; animation-delay: 4s; animation-timing-function: ease-in-out;}
       #tile-image-3 {animation: tile-1-move 4s ; animation-delay: 8s; animation-timing-function: ease-in-out;}
       #tile-image-4 {animation: tile-1-move 4s ; animation-delay: 12s; animation-timing-function: ease-in-out;}
+      #header-image-1 {animation:header-image-move 4s; animation-delay:0s; animation-timing-function: ease-in;}
+      #header-image-2 {animation:header-image-move 5s; animation-delay:0s; animation-timing-function: ease-in;}
+      #header-image-3 {animation:header-image-move 6s; animation-delay:0s; animation-timing-function: ease-in;}
     .sis-ndg-tiles div > img:hover{transform:scale(1.2,1.2); z-index:100!important;}
     .sis-ndg-tiles div > img {width:100%; margin:20px; padding:20px; z-index:0;}
     .sis-ndg-tiles img {transition:1s ease-in-out; transform:skewY(5deg) rotateY(5deg); }
@@ -32,6 +35,11 @@
           0% {transform:skewY(5deg) rotateY(5deg);}
           50% {transform:scale(1.2,1.2);}
           100% {transform:skewY(5deg) rotateY(5deg);}
+      }
+      
+      @keyframes header-image-move{
+          0% {transform:scale(0,0); opacity:0;}
+          100% {transform:scale(1,1); opacity:1;}
       }
   </style>
 </head>
