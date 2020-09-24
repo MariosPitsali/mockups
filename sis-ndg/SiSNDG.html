@@ -4,9 +4,9 @@
 	<meta charset="UTF-8" />
 	<title>SiS Nescafe Dolce Gusto - Under Construction</title>
   <style>
-    .sis-ndg-container {width:900px;}
+    .sis-ndg-container {width:1200px;}
       .ndg-header-banner {display:flex;}
-    .sis-ndg-tiles {display:grid; grid-template-columns:1fr 1fr; grid-gap:3em; width:600px;}
+    .sis-ndg-tiles {display:grid; grid-template-columns:1fr 1fr; grid-gap:3em; width:50%; height:auto;}
     .item-1{grid-column-start:1; grid-column-end:2;grid-row-start:1; grid-row-end:2;}
     .item-2{grid-column-start:2; grid-column-end:3;grid-row-start:1; grid-row-end:2;}
     .item-3{grid-column-start:1; grid-column-end:2;grid-row-start:2; grid-row-end:3;}
@@ -19,45 +19,69 @@
       #header-image-2 {animation:header-image-move 5s; animation-delay:0s; animation-timing-function: ease-in;}
       #header-image-3 {animation:header-image-move 6s; animation-delay:0s; animation-timing-function: ease-in;}
     .sis-ndg-tiles div > img:hover{transform:scale(1.2,1.2); z-index:100!important;}
-    .sis-ndg-tiles div > img {width:100%; margin:20px; padding:20px; z-index:0;}
-    .sis-ndg-tiles img {transition:1s ease-in-out; transform:skewY(5deg) rotateY(5deg); }
-    .dolce-gusto-infographic {display:flex; padding:1em; margin:1em; flex-wrap:wrap; flex-direction:row; justify-content: space-around;align-items:center; align-content:center; border-left:2px solid black;  border-bottom:2px solid black;}
+    .sis-ndg-tiles div > img {width:100%; margin:.7em; padding:20px; z-index:0;}
+    .sis-ndg-tiles img {transition:1s ease-in-out; }
+      /*infographics general*/
+      .dolce-gusto-infographics {display:flex; flex-direction:row;}
+    .dolce-gusto-infographic-left {display:flex; width:45%; padding:1em; margin:1em; flex-wrap:wrap; flex-direction:column; justify-content: space-evenly;align-items:left; align-content:left; border-left:2px solid black;  border-bottom:2px solid black;}
+      .dolce-gusto-infographic-right{display:flex; width:45%; padding:1em; margin:1em; flex-wrap:wrap; flex-direction:column; justify-content: space-evenly;align-items:right; align-content:right; border-right:2px solid black;  border-bottom:2px solid black;}
     .dolce-gusto-text {flex-grow:1; width:550px;}
     .dolce-gusto-thumb {flex-grow:2; width:250px; text-align:center;}
-      .dolce-gusto-infographic > div {display:inline-block; margin:1em;}
-      .dolce-gusto-infographic > div > img {width:40%; transition:1s ease-in-out;}
-      .dolce-gusto-infographic:hover > div > img {transform:scale(1.2,1.2);}
+      /*left infographic*/
+      .dolce-gusto-infographic-left > div {display:inspanne-block; margin:1em;}
+      .dolce-gusto-infographic-t .ndg-feature-heading {text-align:-webkit-left;}
+      .dolce-gusto-infographic-left p {text-align:center;}
+      .dolce-gusto-infographic-left > div > img {width:40%; transition:1s ease-in-out;}
+      .dolce-gusto-infographic-left:hover > div > img {transform:scale(1.2,1.2);}
+      /*right infographic*/
+      .dolce-gusto-infographic-right > div {display:inspanne-block; margin:1em;}
+      .dolce-gusto-infographic-right .ndg-feature-heading {text-align:-webkit-right;}
+      .dolce-gusto-infographic-right p {text-align:center;}
+      .dolce-gusto-infographic-right > div > img {width:40%; transition:1s ease-in-out;}
+      .dolce-gusto-infographic-right:hover > div > img {transform:scale(1.2,1.2);}
       .ndg-feature-heading::after {content:""; text-align:center; border-bottom:2px solid black; display:block; width:5%; transition:.5s ease-in-out;}
 	  .ndg-rich-content > p:hover .ndg-feature-heading::after {width:15%;}
       .ndg-feature-heading {display:block;}
       .ndg-text-and-tiles {display:flex; align-content:center; justify-content:space-evenly; align-items:center; flex-wrap:wrap; transition:0.8s;}
+      .ndg-text{width:30%;}
+      .ndg-fading-text {display:block; margin:1em; transition:ease-in-out; opacity:0;}
+      .ndg-fading-text#text-1 {animation:ndg-text-fading-movement 3s; animation-delay:2s; animation-timing-function: ease-in-out;}
+      .ndg-fading-text#text-2 {animation:ndg-text-fading-movement 3s; animation-delay:5s; animation-timing-function: ease-in-out;}
+      .ndg-fading-text#text-3 {animation:ndg-text-fading-movement 3s; animation-delay:8s; animation-timing-function: ease-in-out;}
+      .ndg-fading-text#text-4 {animation:ndg-text-fading-movement 3s; animation-delay:11s; animation-timing-function: ease-in-out;}
+      .ndg-fading-text#text-5 {animation:ndg-text-fading-movement 3s; animation-delay:14s; animation-timing-function: ease-in-out;}
       @keyframes tile-1-move{
-          0% {transform:skewY(5deg) rotateY(5deg);}
+          0% {transform:scale(1,1);}
           50% {transform:scale(1.2,1.2);}
-          100% {transform:skewY(5deg) rotateY(5deg);}
+          100% {transform:scale(1,1);}
       }
       
       @keyframes header-image-move{
           0% {transform:scale(0,0); opacity:0;}
           100% {transform:scale(1,1); opacity:1;}
       }
+      
+      @keyframes ndg-text-fading-movement{
+          0% {opacity:0;}
+          100%{opacity:1;}
+      }
   </style>
 </head>
 <body>
   <div class="sis-ndg-container">
       <div class="ndg-header-banner">
-          <div class="ndg-header-banner-part" id="part-1"><img id ="header-image-1" src="images/ndg_banner_img_1.png" alt=""/></div>
-          <div class="ndg-header-banner-part" id="part-2"><img id ="header-image-2" src="images/ndg_banner_img_2.png" alt=""/></div>
+          <div class="ndg-header-banner-part" id="part-1"><img id ="header-image-1" src="https://eshop.mymarket.gr/images/SiS_Dolce_Gusto/ndg_banner_img_1.png" alt=""/></div>
+          <div class="ndg-header-banner-part" id="part-2"><img id ="header-image-2" src="https://eshop.mymarket.gr/images/SiS_Dolce_Gusto/ndg_banner_img_2.png" alt=""/></div>
           <div class="ndg-header-banner-part" id="part-3"><img id ="header-image-3" src="images/ndg_banner_img_3.png" alt=""/></div>
       </div>
       <div class="ndg-text-and-tiles">
           <div class="ndg-text">
           	Οι μηχανές NESCAFÉ® Dolce Gusto®, προσφέρουν τη δυνατότητα δημιουργίας απολαυστικών ροφημάτων στην άνεση του σπιτιού σας. <ul>
-              <li>Οι κάψουλες NESCAFÉ® Dolce Gusto® έχουν σχεδιαστεί με τέτοιο τρόπο από τους ειδικούς μας, ώστε να διασφαλίζεται η ποιότητα του καφέ, από τη στιγμή που συσκευάζεται μέχρι και τη στιγμή που φτάνει στην κούπα σας. Συνδυάζοντας τη σύγχρονη τεχνολογία με το εξαιρετικό design, η εκχύλιση του καφέ γίνεται με πίεση 15bar, εξασφαλίζοντας  πλούσιο σώμα, ασύγκριτο άρωμα και γεμάτη γεύση σε κάθε γουλιά.</li>
-              <li>Η μεγάλη ποικιλία γεύσεων και εντάσεων στα ροφήματα μας, μπορούν να ικανοποιήσουν  απόλυτα  ακόμα και τους πιο απαιτητικούς.</li>
-              <li>Επίλεξε τι σου ταιριάζει ανάμεσα σε μοναδικές επιλογές, από κλασικό αρωματικό espresso μέχρι cappuccino και latte macchiato με πλούσιο αφρό γάλακτος, αλλά και απολαυστική ζεστή σοκολάτα.</li>
-              <li>Το ταξίδι της απόλαυσης συνεχίζεται με τις μοναδικές κρύες επιλογές μας:  freddo espresso με  έντονο καβούρδισα για πλούσια γεύση και cold brew με τον ιδιαίτερο  χαρακτήρα του.</li>
-              <li>Δοκίμασε κι εσύ τη γευστική εμπειρία NESCAFÉ® Dolce Gusto ®! Απόλαυσε τον αγαπημένο σου καφέ, τώρα! </li>
+              <span class="ndg-fading-text" id="text-1">Οι κάψουλες NESCAFÉ® Dolce Gusto® έχουν σχεδιαστεί με τέτοιο τρόπο από τους ειδικούς μας, ώστε να διασφαλίζεται η ποιότητα του καφέ, από τη στιγμή που συσκευάζεται μέχρι και τη στιγμή που φτάνει στην κούπα σας. Συνδυάζοντας τη σύγχρονη τεχνολογία με το εξαιρετικό design, η εκχύλιση του καφέ γίνεται με πίεση 15bar, εξασφαλίζοντας  πλούσιο σώμα, ασύγκριτο άρωμα και γεμάτη γεύση σε κάθε γουλιά.</span>
+              <span class="ndg-fading-text" id="text-2">Η μεγάλη ποικιλία γεύσεων και εντάσεων στα ροφήματα μας, μπορούν να ικανοποιήσουν  απόλυτα  ακόμα και τους πιο απαιτητικούς.</span>
+              <span class="ndg-fading-text" id="text-3">Επίλεξε τι σου ταιριάζει ανάμεσα σε μοναδικές επιλογές, από κλασικό αρωματικό espresso μέχρι cappuccino και latte macchiato με πλούσιο αφρό γάλακτος, αλλά και απολαυστική ζεστή σοκολάτα.</span>
+              <span class="ndg-fading-text" id="text-4">Το ταξίδι της απόλαυσης συνεχίζεται με τις μοναδικές κρύες επιλογές μας:  freddo espresso με  έντονο καβούρδισα για πλούσια γεύση και cold brew με τον ιδιαίτερο  χαρακτήρα του.</span>
+              <span class="ndg-fading-text" id="text-5">Δοκίμασε κι εσύ τη γευστική εμπειρία NESCAFÉ® Dolce Gusto ®! Απόλαυσε τον αγαπημένο σου καφέ, τώρα! </span>
               </ul>
           </div>
         <div class="sis-ndg-tiles">
@@ -67,29 +91,55 @@
           <div class="item-4"><img id ="tile-image-4" src="https://eshop.mymarket.gr/images/SiS_Dolce_Gusto/12481_NDG_Photo_Booklet-4_2000x2000.png" alt="" /></div>
         </div>
     </div>
-      <div class="dolce-gusto-infographic">
+      <div class="dolce-gusto-infographics">
+      <div class="dolce-gusto-infographic-left">
     	<div class="text-1 dolce-gusto-text">
             <div class="ndg-rich-content" style="padding:1em;">
-                <p><strong class="ndg-feature-heading">ΚΑΦΕΣ</strong> Ανακαλύψτε τον NESCAFÉ® Dolce Gusto® Espresso Intenso, έναν έντονο, μέτρια σκούρο καβουρδισμένο καφέ. Αυτός ο καφές που σερβίρεται σε μικρό φλυτζάνι (στα 50ml) χαρακτηρίζεται από νότες φρούτων και μπαχαρικών, έχει απαλό σώμα και πλούσια βελούδινη κρέμα. Απολαύστε τις νότες των καλοκαιρινών κόκκινων μούρων, που δημιουργούν διακριτικές πικάντικες αντιθέσεις με το πιπέρι των ροζ μούρων. Ένας espresso με μεσαία καβουρδισμένο χαρμάνι, γεμάτος τολμηρές αντιθέσεις.</p>
+                <strong class="ndg-feature-heading">ΚΑΦΕΣ</strong><p> Ανακαλύψτε τον NESCAFÉ® Dolce Gusto® Espresso Intenso, έναν έντονο, μέτρια σκούρο καβουρδισμένο καφέ. Αυτός ο καφές που σερβίρεται σε μικρό φλυτζάνι (στα 50ml) χαρακτηρίζεται από νότες φρούτων και μπαχαρικών, έχει απαλό σώμα και πλούσια βελούδινη κρέμα. Απολαύστε τις νότες των καλοκαιρινών κόκκινων μούρων, που δημιουργούν διακριτικές πικάντικες αντιθέσεις με το πιπέρι των ροζ μούρων. Ένας espresso με μεσαία καβουρδισμένο χαρμάνι, γεμάτος τολμηρές αντιθέσεις.</p>
 
-                <p><br />
-                <strong class="ndg-feature-heading">ΓΕΥΣΗ</strong> Με τους ερμητικά σφραγισμένες κάψουλές μας, που διατηρούν τη φρέσκια γεύση του καφέ μας, θα απολαμβάνετε πλούσια αρωματικά ροφήματα κάθε φορά.
+                <br />
+                <strong class="ndg-feature-heading">ΓΕΥΣΗ</strong><p> Με τους ερμητικά σφραγισμένες κάψουλές μας, που διατηρούν τη φρέσκια γεύση του καφέ μας, θα απολαμβάνετε πλούσια αρωματικά ροφήματα κάθε φορά.
                 </p>
 
-                <p><br />
-                <strong class="ndg-feature-heading">ΠΟΙΟΤΗΤΑ</strong> Δημιουργήστε καφέ επαγγελματικής ποιότητας με το πάτημα ενός κουμπιού, χάρη στις μηχανές καφέ υψηλής πίεσης με πίεση αντλίας έως και 15 bar.
+                <br />
+                <strong class="ndg-feature-heading">ΠΟΙΟΤΗΤΑ</strong><p> Δημιουργήστε καφέ επαγγελματικής ποιότητας με το πάτημα ενός κουμπιού, χάρη στις μηχανές καφέ υψηλής πίεσης με πίεση αντλίας έως και 15 bar.
                 </p>
 
-                <p><br />
-                <strong class="ndg-feature-heading">ΕΥΚΟΛΙΑ</strong>Γρήγορη και εύκολη προετοιμασία σε λιγότερο από 1 λεπτό, με πάνω από 50 ροφήματα σε όλη τη σειρά Nescafé Dolce Gusto και Starbucks.
+                <br />
+                <strong class="ndg-feature-heading">ΕΥΚΟΛΙΑ</strong><p>Γρήγορη και εύκολη προετοιμασία σε λιγότερο από 1 λεπτό, με πάνω από 50 ροφήματα σε όλη τη σειρά Nescafé Dolce Gusto και Starbucks.
                 </p>
 
-                <p><br />
-                <strong class="ndg-feature-heading">ΒΙΩΣΙΜΟΤΗΤΑ</strong> Υπεύθυνος ποιοτικός καφές, που καλλιεργείται με σεβασμό στους παραγωγούς, τις κοινότητές τους και τον πλανήτη.
+                <br />
+                <strong class="ndg-feature-heading">ΒΙΩΣΙΜΟΤΗΤΑ</strong> <p>Υπεύθυνος ποιοτικός καφές, που καλλιεργείται με σεβασμό στους παραγωγούς, τις κοινότητές τους και τον πλανήτη.
                 </p>
             </div>
         </div>
         <div class="thumb-1 dolce-gusto-thumb"><img src="https://eshop.mymarket.gr/images/261502_1.jpg" alt="" /></div>
+    </div>
+      <div class="dolce-gusto-infographic-right">
+    	<div class="text-1 dolce-gusto-text">
+            <div class="ndg-rich-content" style="padding:1em;">
+                <strong class="ndg-feature-heading">ΚΑΦΕΣ</strong><p> Ανακαλύψτε τον NESCAFÉ® Dolce Gusto® Espresso Intenso, έναν έντονο, μέτρια σκούρο καβουρδισμένο καφέ. Αυτός ο καφές που σερβίρεται σε μικρό φλυτζάνι (στα 50ml) χαρακτηρίζεται από νότες φρούτων και μπαχαρικών, έχει απαλό σώμα και πλούσια βελούδινη κρέμα. Απολαύστε τις νότες των καλοκαιρινών κόκκινων μούρων, που δημιουργούν διακριτικές πικάντικες αντιθέσεις με το πιπέρι των ροζ μούρων. Ένας espresso με μεσαία καβουρδισμένο χαρμάνι, γεμάτος τολμηρές αντιθέσεις.</p>
+
+                <br />
+                <strong class="ndg-feature-heading">ΓΕΥΣΗ</strong><p> Με τους ερμητικά σφραγισμένες κάψουλές μας, που διατηρούν τη φρέσκια γεύση του καφέ μας, θα απολαμβάνετε πλούσια αρωματικά ροφήματα κάθε φορά.
+                </p>
+
+                <br />
+                <strong class="ndg-feature-heading">ΠΟΙΟΤΗΤΑ</strong><p> Δημιουργήστε καφέ επαγγελματικής ποιότητας με το πάτημα ενός κουμπιού, χάρη στις μηχανές καφέ υψηλής πίεσης με πίεση αντλίας έως και 15 bar.
+                </p>
+
+                <br />
+                <strong class="ndg-feature-heading">ΕΥΚΟΛΙΑ</strong><p>Γρήγορη και εύκολη προετοιμασία σε λιγότερο από 1 λεπτό, με πάνω από 50 ροφήματα σε όλη τη σειρά Nescafé Dolce Gusto και Starbucks.
+                </p>
+
+                <br />
+                <strong class="ndg-feature-heading">ΒΙΩΣΙΜΟΤΗΤΑ</strong> <p>Υπεύθυνος ποιοτικός καφές, που καλλιεργείται με σεβασμό στους παραγωγούς, τις κοινότητές τους και τον πλανήτη.
+                </p>
+            </div>
+        </div>
+        <div class="thumb-1 dolce-gusto-thumb"><img src="https://eshop.mymarket.gr/images/261502_1.jpg" alt="" /></div>
+    </div>
     </div>
 	</div>
     
