@@ -4,102 +4,110 @@
 	<meta charset="UTF-8" />
 	<title>SiS Nescafe Dolce Gusto - Under Construction</title>
   <style>
-    .sis-ndg-container {width:1200px;}
+    .sis-ndg-container {width:1000px; font-size:14px;}
       .sis-header-text h2 {border-top:4px solid black; border-bottom:4px solid black; width:70% text-align:center; display:inline-block; margin:2em;padding:1em;}
       .sis-header-text{ text-align:center;}
-      .ndg-header-banner {display:flex;}
-    .sis-ndg-tiles {display:grid; grid-template-columns:1fr 1fr; grid-gap:3em; width:50%; height:auto;}
+      .ndg-header-banner {display:flex; justify-content:flex-start; padding:30px; border-bottom:2px solid black;}
+      img#header-image-1 {width:300px}
+      img#header-image-2{width:300px}
+      img#header-image-3{width:300px}
+    .sis-ndg-tiles {display:grid; grid-template-columns:1fr 1fr; grid-gap:1em; width:500px; height:auto;}
     .item-1{grid-column-start:1; grid-column-end:2;grid-row-start:1; grid-row-end:2;}
     .item-2{grid-column-start:2; grid-column-end:3;grid-row-start:1; grid-row-end:2;}
     .item-3{grid-column-start:1; grid-column-end:2;grid-row-start:2; grid-row-end:3;}
     .item-4{grid-column-start:2; grid-column-end:3;grid-row-start:2; grid-row-end:3;}
-      #tile-image-1 {animation: tile-1-move 4s ; animation-delay: 0s; animation-timing-function: ease-in-out;}
-      #tile-image-2 {animation: tile-1-move 4s ; animation-delay: 4s; animation-timing-function: ease-in-out;}
-      #tile-image-3 {animation: tile-1-move 4s ; animation-delay: 8s; animation-timing-function: ease-in-out;}
-      #tile-image-4 {animation: tile-1-move 4s ; animation-delay: 12s; animation-timing-function: ease-in-out;}
+      #tile-image-1 {animation: tile-1-move 2s ; animation-delay: 0s; animation-timing-function: ease-in-out;}
+      #tile-image-2 {animation: tile-1-move 2s ; animation-delay: 2s; animation-timing-function: ease-in-out;}
+      #tile-image-3 {animation: tile-1-move 2s ; animation-delay: 4s; animation-timing-function: ease-in-out;}
+      #tile-image-4 {animation: tile-1-move 2s ; animation-delay: 6s; animation-timing-function: ease-in-out;}
       #header-image-1 {animation:header-image-move 4s; animation-delay:0s; animation-timing-function: ease-in;}
       #header-image-2 {animation:header-image-move 5s; animation-delay:0s; animation-timing-function: ease-in;}
       #header-image-3 {animation:header-image-move 6s; animation-delay:0s; animation-timing-function: ease-in;}
-    .sis-ndg-tiles div > img:hover{transform:scale(1.2,1.2); z-index:100!important;}
-    .sis-ndg-tiles div > img {width:100%; margin:.7em; padding:20px; z-index:0;}
-    .sis-ndg-tiles img {transition:1s ease-in-out; }
+    /*.sis-ndg-tiles div > img:hover{transform:scale(1.2,1.2); z-index:100!important;}*/
+    .sis-ndg-tiles div > img {width:100%; margin:.7em; z-index:0;}
+    .sis-ndg-tiles img {transition:.5s ease-in-out; }
       /*infographics general*/
-      .dolce-gusto-infographics {display:flex; flex-direction:row;}
-    .dolce-gusto-infographic-left {display:flex; width:45%; padding:1em; margin:1em; flex-wrap:wrap; flex-direction:column; justify-content: space-evenly; align-items:center; align-content:left; border-right:2px solid black;  border-left:2px solid black;}
-      .dolce-gusto-infographic-right{display:flex; width:45%; padding:1em; margin:1em; flex-wrap:wrap; flex-direction:column; justify-content: space-evenly; align-items:center; align-content:right; border-right:2px solid black;  border-left:2px solid black;}
-    .dolce-gusto-text {flex-grow:1; width:550px;}
-    .dolce-gusto-infographic-left > div.thumb-1.dolce-gusto-thumb > img {flex-grow:2; width:200px; align-self:center;}
-     .dolce-gusto-infographic-right > div.thumb-2.dolce-gusto-thumb > img { flex-grow:2; width:200px; align-self:center;}
+      .infographic-headers {display:flex; justify-content:space-around; width:100%; margin:2em;}
+      .dolce-gusto-infographics {display:flex; flex-direction:row; width:100%; justify-content:space-evenly;}
+      .dolce-gusto-infographics:hover > .dolce-gusto-infographic-left, .dolce-gusto-infographics:hover > .dolce-gusto-infographic-right{
+          -webkit-filter:blur(4px);
+      }
+    .dolce-gusto-infographic-left {display:flex; width:400px; padding:1em; margin:1em; flex-wrap:nowrap; flex-direction:column; justify-content: space-evenly; align-items:flex-start; align-content:flex-end; border-right:2px solid black;  }
+      .dolce-gusto-infographic-right{display:flex; width:400px; padding:1em; margin:1em; flex-wrap:nowrap; flex-direction:column; justify-content: space-evenly; align-items:flex-end; align-content:right;   border-left:2px solid black;}
+    .dolce-gusto-text {flex-grow:1; width:100%;}
+    .dolce-gusto-infographic-left > div.thumb-1.dolce-gusto-thumb > img {flex-grow:2; width:280px; align-self:center;}
+     .dolce-gusto-infographic-right > div.thumb-2.dolce-gusto-thumb > img { flex-grow:2; width:280px; align-self:center;}
       /*left infographic*/
-      .dolce-gusto-infographic-left > div {display:inline-block; margin:1em;}
-      .dolce-gusto-infographic-t .ndg-feature-heading {text-align:-webkit-left;}
-      .dolce-gusto-infographic-left p {text-align:center;}
-      .dolce-gusto-infographic-left > div > img {width:40%; transition:1s ease-in-out;}
-      .dolce-gusto-infographic-left {-webkit-filter:blur(5px); transition: .5s ease-in-out;}
-      .dolce-gusto-infographic-left:hover  {-webkit-filter:blur(0px); transition: .5s ease-in-out;}
+      .dolce-gusto-infographic-left > div {display:block; margin:1em;}
+      .dolce-gusto-infographic-left .ndg-feature-heading {text-align:-webkit-left;}
+      .dolce-gusto-infographic-left p {text-align:left;}
+      .dolce-gusto-infographic-left > div > img {width:40%; transition:.5s ease-in-out;}
+      .dolce-gusto-infographic-left { transition: .5s ease-in-out; }
+      .dolce-gusto-infographic-left:hover {background-color:rgba(39,41,19,1); color:white;-webkit-filter:blur(0px)!important; transition: .5s ease-in-out;}
       /*right infographic*/
-      .dolce-gusto-infographic-right > div {display:inline-block; margin:1em;}
+      .dolce-gusto-infographic-right > div {display:block; margin:1em;}
       .dolce-gusto-infographic-right .ndg-feature-heading {text-align:-webkit-right;}
-      .dolce-gusto-infographic-right p {text-align:center;}
-      .dolce-gusto-infographic-right > div > img {width:40%; transition:1s ease-in-out;}
-      .dolce-gusto-infographic-right {-webkit-filter:blur(5px); transition: .5s ease-in-out;}
-      .dolce-gusto-infographic-right:hover  {-webkit-filter:blur(0px); transition: .5s ease-in-out;}
+      .dolce-gusto-infographic-right p {text-align:-webkit-right;}
+      .dolce-gusto-infographic-right > div > img {width:50%; transition:.5s ease-in-out;}
+      .dolce-gusto-infographic-right {transition: .5s ease-in-out; }
+      .dolce-gusto-infographic-right:hover {background-color:rgba(162,33,98,1); color:white;-webkit-filter:blur(0px)!important; transition: .5s ease-in-out;}
       /*feature heading*/
-      .ndg-feature-heading {transition:.5s ease-in-out;margin:1em;}
-      .ndg-feature-heading::after {content:""; text-align:center; border-bottom:2px solid black; display:block; width:5%; transition:.5s ease-in-out;} 
-      .dolce-gusto-infographic-right:hover .ndg-feature-heading::after {width:15%; border-color:#8d1d53;}
-      .dolce-gusto-infographic-left:hover .ndg-feature-heading::after {width:15%; border-color:#272913;}
+      .ndg-feature-heading {transition:.5s ease-in-out;}
+      .ndg-feature-heading::after {content:""; text-align:center; border-bottom:2px solid black; display:block; width:5%; transition:.5s ease-in-out;}
+      .ndg-rich-content{display:flex; flex-direction:column;}
+      .dolce-gusto-infographic-right:hover .ndg-feature-heading::after {width:18%; border-color:white;}
+      .dolce-gusto-infographic-left:hover .ndg-feature-heading::after {width:18%; border-color:white;}
       .ndg-feature-heading {display:block;}
-      .ndg-text-and-tiles {display:flex; align-content:center; justify-content:space-evenly; align-items:center; flex-wrap:wrap; transition:0.8s;}
-      .ndg-text{width:30%;}
+      .ndg-text-and-tiles {display:flex; align-content:center; justify-content:space-evenly; align-items:center; flex-wrap:wrap; transition:0.5s; padding:30px; }
+      .ndg-text{width:350px; border-bottom:2px solid black;}
       .ndg-fading-text {display:block; margin:1em; transition:ease-in-out;}
-      .ndg-fading-text#text-1 {animation:ndg-text-fading-movement 3s; animation-delay:2s; animation-timing-function: ease-in-out;}
-      .ndg-fading-text#text-2 {animation:ndg-text-fading-movement 3s; animation-delay:5s; animation-timing-function: ease-in-out;}
+      .ndg-fading-text#text-1 {animation:ndg-text-fading-movement 2s; animation-delay:2s; animation-timing-function: ease-in-out;}
+      .ndg-fading-text#text-2 {animation:ndg-text-fading-movement 2s; animation-delay:5s; animation-timing-function: ease-in-out;}
       .ndg-fading-text#text-3 {animation:ndg-text-fading-movement 3s; animation-delay:8s; animation-timing-function: ease-in-out;}
       .ndg-fading-text#text-4 {animation:ndg-text-fading-movement 3s; animation-delay:11s; animation-timing-function: ease-in-out;}
       .ndg-fading-text#text-5 {animation:ndg-text-fading-movement 3s; animation-delay:14s; animation-timing-function: ease-in-out;}
+
       @keyframes tile-1-move{
-          0% {transform:scale(1,1);}
-          50% {transform:scale(1.2,1.2);}
-          100% {transform:scale(1,1);}
+          0% {transform:scale(.5,.5); opacity:1;}
+          50%{transform:scale(.7,.7); opacity:0;}
+          100% {transform:scale(1,1); opacity:1;}
       }
-      
+
       @keyframes header-image-move{
           0% {transform:scale(0,0); opacity:0;}
           100% {transform:scale(1,1); opacity:1;}
       }
-      
-      /*@keyframes ndg-text-fading-movement{
-          0% {opacity:0;}
-          100%{opacity:1;}
-      }*/
+
   </style>
 </head>
 <body>
   <div class="sis-ndg-container">
+      
       <div class="sis-header-text"><h2>NESCAFÉ Dolce Gusto</h2></div>
+      <!--- HEADER BANNER FLEX --->
       <div class="ndg-header-banner">
           <div class="ndg-header-banner-part" id="part-1"><img id ="header-image-1" src="https://eshop.mymarket.gr/images/SiS_Dolce_Gusto/ndg_banner_img_1.png" alt=""/></div>
           <div class="ndg-header-banner-part" id="part-2"><img id ="header-image-2" src="https://eshop.mymarket.gr/images/SiS_Dolce_Gusto/ndg_banner_img_2.png" alt=""/></div>
-          <div class="ndg-header-banner-part" id="part-3"><img id ="header-image-3" src="images/ndg_banner_img_3.png" alt=""/></div>
+          <div class="ndg-header-banner-part" id="part-3"><img id ="header-image-3" src="https://eshop.mymarket.gr/images/SiS_Dolce_Gusto/ndg_banner_img_3.png" alt=""/></div>
       </div>
+      
+     <!--- NDG TILES GRID --->
       <div class="ndg-text-and-tiles">
+          <!--- TEXT --->
           <div class="ndg-text">
-          	Οι μηχανές NESCAFÉ® Dolce Gusto®, προσφέρουν τη δυνατότητα δημιουργίας απολαυστικών ροφημάτων στην άνεση του σπιτιού σας. <ul>
+          	<h3 style="text-transform:uppercase;font-size:14px;">Οι μηχανές NESCAFÉ® Dolce Gusto®, προσφέρουν τη δυνατότητα δημιουργίας απολαυστικών ροφημάτων στην άνεση του σπιτιού σας.</h3>
               <span class="ndg-fading-text" id="text-1">Οι κάψουλες NESCAFÉ® Dolce Gusto® έχουν σχεδιαστεί με τέτοιο τρόπο από τους ειδικούς μας, ώστε να διασφαλίζεται η ποιότητα του καφέ, από τη στιγμή που συσκευάζεται μέχρι και τη στιγμή που φτάνει στην κούπα σας. Συνδυάζοντας τη σύγχρονη τεχνολογία με το εξαιρετικό design, η εκχύλιση του καφέ γίνεται με πίεση 15bar, εξασφαλίζοντας  πλούσιο σώμα, ασύγκριτο άρωμα και γεμάτη γεύση σε κάθε γουλιά.</span>
-              <span class="ndg-fading-text" id="text-2">Η μεγάλη ποικιλία γεύσεων και εντάσεων στα ροφήματα μας, μπορούν να ικανοποιήσουν  απόλυτα  ακόμα και τους πιο απαιτητικούς.</span>
-              <span class="ndg-fading-text" id="text-3">Επίλεξε τι σου ταιριάζει ανάμεσα σε μοναδικές επιλογές, από κλασικό αρωματικό espresso μέχρι cappuccino και latte macchiato με πλούσιο αφρό γάλακτος, αλλά και απολαυστική ζεστή σοκολάτα.</span>
-              <span class="ndg-fading-text" id="text-4">Το ταξίδι της απόλαυσης συνεχίζεται με τις μοναδικές κρύες επιλογές μας:  freddo espresso με  έντονο καβούρδισα για πλούσια γεύση και cold brew με τον ιδιαίτερο  χαρακτήρα του.</span>
               <span class="ndg-fading-text" id="text-5">Δοκίμασε κι εσύ τη γευστική εμπειρία NESCAFÉ® Dolce Gusto ®! Απόλαυσε τον αγαπημένο σου καφέ, τώρα! </span>
-              </ul>
           </div>
+          <!--- TILES GRID --->
         <div class="sis-ndg-tiles">
             <div class="item-1"><img id ="tile-image-1" src="https://eshop.mymarket.gr/images/SiS_Dolce_Gusto/12481_NDG_Photo_Booklet-1_2000x2000_v1.png" alt="" /></div>
-          <div class="item-2"><img id ="tile-image-2" src="https://eshop.mymarket.gr/images/SiS_Dolce_Gusto/12481_NDG_Photo_Booklet-2_2000x2000_v1.png" alt="" /></div>
-          <div class="item-3"><img id ="tile-image-3" src="https://eshop.mymarket.gr/images/SiS_Dolce_Gusto/12481_NDG_Photo_Booklet-3_2000x2000.png" alt="" /></div>
+          <div class="item-2"><img id ="tile-image-2" src="https://eshop.mymarket.gr/images/SiS_Dolce_Gusto/12481_NDG_Photo_Booklet-3_2000x2000.png" alt="" /></div>
+          <div class="item-3"><img id ="tile-image-3" src="https://eshop.mymarket.gr/images/SiS_Dolce_Gusto/12481_NDG_Photo_Booklet-2_2000x2000_v1.png" alt="" /></div>
           <div class="item-4"><img id ="tile-image-4" src="https://eshop.mymarket.gr/images/SiS_Dolce_Gusto/12481_NDG_Photo_Booklet-4_2000x2000.png" alt="" /></div>
         </div>
     </div>
+      <!--- FEATURED PRODUCTS - INFOGRAPHICS --->
       <div class="dolce-gusto-infographics">
       <div class="dolce-gusto-infographic-left">
     	<div class="text-1 dolce-gusto-text">
@@ -123,7 +131,7 @@
                 </p>
             </div>
         </div>
-        <div class="thumb-1 dolce-gusto-thumb"><img src="https://eshop.mymarket.gr/images/261502_1.jpg" alt="" /></div>
+        <div class="thumb-1 dolce-gusto-thumb" style="align-self:center;"><img src="https://eshop.mymarket.gr/images/261502_1.jpg" alt="" /></div>
     </div>
       <div class="dolce-gusto-infographic-right">
     	<div class="text-1 dolce-gusto-text">
@@ -147,10 +155,15 @@
                 </p>
             </div>
         </div>
-        <div class="thumb-2 dolce-gusto-thumb"><img src="https://eshop.mymarket.gr/images/12122102_i.jpg" alt="" /></div>
+        <div class="thumb-2 dolce-gusto-thumb" style="align-self:center;"><img src="https://eshop.mymarket.gr/images/12122102_i.jpg" alt="" /></div>
     </div>
     </div>
-	</div>
-    
+      <div class="sis-outro-text">
+          <span class="ndg-fading-text" id="text-2">Η μεγάλη ποικιλία γεύσεων και εντάσεων στα ροφήματα μας, μπορούν να ικανοποιήσουν  απόλυτα  ακόμα και τους πιο απαιτητικούς.</span>
+              <span class="ndg-fading-text" id="text-3">Επίλεξε τι σου ταιριάζει ανάμεσα σε μοναδικές επιλογές, από κλασικό αρωματικό espresso μέχρι cappuccino και latte macchiato με πλούσιο αφρό γάλακτος, αλλά και απολαυστική ζεστή σοκολάτα.</span>
+              <span class="ndg-fading-text" id="text-4">Το ταξίδι της απόλαυσης συνεχίζεται με τις μοναδικές κρύες επιλογές μας:  freddo espresso με  έντονο καβούρδισα για πλούσια γεύση και cold brew με τον ιδιαίτερο  χαρακτήρα του.</span>
+      </div>
+    </div>
 </body>
+    
 </html>
