@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Newspaper Grid</title>
+    <style>
+        .grid-container {
+        	display:grid;
+            grid-template-areas:
+                "item1 item2 . item3"
+                "item1 item2 . item3"
+                "item4 item4 item4 .";
+            background-color:gray;
+        }
+        .grid-item {
+            display:block;
+            border-left:1px solid black;
+            padding:1em;
+        }
+        .grid-item::before{
+            content:"Paragraph: ";
+            font-weight:bold;
+        }
+        .grid-item-1{
+            grid-area:item1;
+        }
+        .grid-item-2{
+            grid-area:item2;
+        }
+        .grid-item-3{
+            grid-area:item3;
+        }
+        .grid-item-4{
+            grid-area:item4;
+        }
+        grid
+    </style>
+</head>
+<body>
+	<div class="grid-container">
+		<div class="grid-item grid-item-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar nulla ut purus aliquam vestibulum et id dolor. Nam dolor metus, hendrerit rutrum porta eu, lacinia vitae lacus. Phasellus iaculis nisi in semper rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc bibendum turpis sit amet lectus iaculis hendrerit. Curabitur fermentum metus eu risus rhoncus laoreet. Aenean orci orci, rutrum in suscipit at, pulvinar sit amet orci. Cras placerat dolor turpis, sed rutrum erat hendrerit eget.</div> 
+        <div class="grid-item grid-item-2">In ac velit venenatis, pretium eros vel, varius sapien. Praesent vitae enim sit amet nulla congue imperdiet. Vivamus bibendum leo augue, ac pretium nulla venenatis sed. Pellentesque tincidunt in diam vitae sollicitudin. Donec ornare lorem vitae ipsum porta dignissim. Ut porta sed ipsum id aliquam. Vivamus quis rutrum tellus.</div> 
+        <div class="grid-item grid-item-3">Cras ultricies est nec mauris ultricies, ac faucibus massa maximus. Curabitur viverra felis non mauris sagittis, et blandit urna volutpat. Aenean dolor metus, fringilla sed libero a, posuere condimentum quam. Proin sollicitudin risus nibh, id consequat massa luctus et. Praesent sed tortor vulputate, venenatis enim in, pulvinar nisl. Sed pharetra, ipsum ut porta viverra, mauris tortor consectetur urna, at ullamcorper nisl risus sed lacus. Fusce nec augue ut nisl iaculis blandit. Donec nisl arcu, pharetra sit amet augue vitae, venenatis ultricies lacus. Aenean non rutrum ante.</div> 
+        <div class="grid-item grid-item-4">Curabitur non elit non arcu scelerisque consequat. Pellentesque convallis efficitur ipsum, vitae sollicitudin urna euismod non. Proin et mauris nec arcu dignissim molestie aliquam nec lorem. Vivamus purus velit, bibendum a hendrerit sit amet, eleifend accumsan dui. In semper posuere leo, eget ullamcorper odio varius at. Phasellus tempus est eu dui hendrerit tincidunt. Proin vel nisl et elit placerat ullamcorper quis at lacus. Nulla mattis ipsum eu eros varius pretium. Suspendisse tincidunt arcu sit amet nibh faucibus, sollicitudin ultrices libero laoreet. Donec efficitur volutpat enim mollis ornare.</div> 
+        <div class="grid-item grid-item-5">Sed convallis ut mauris at accumsan. Aliquam ut eleifend lorem. Nulla at ullamcorper leo, vel pellentesque magna. Suspendisse dictum bibendum feugiat. Donec convallis tortor ut malesuada vulputate. Curabitur urna arcu, porttitor et sapien sed, viverra dapibus tellus. Integer vel velit ornare, facilisis eros nec, gravida ante. Maecenas viverra lorem mauris, a eleifend diam ornare vel. Morbi egestas felis sit amet est cursus pretium. Mauris vitae tincidunt dui, in tempus urna. Ut pulvinar, orci sit amet lobortis ultrices, lacus lacus pellentesque turpis, eget porta felis mauris sit amet mi. Nulla sagittis nec dui at elementum. Ut ut libero eu velit ultrices sodales sed id quam. Vivamus consectetur orci vel cursus aliquam. Curabitur placerat viverra semper.</div>         
+	</div>
+</body>
+</html>

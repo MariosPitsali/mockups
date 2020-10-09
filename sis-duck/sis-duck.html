@@ -4,14 +4,21 @@
 	<meta charset="UTF-8" />
 	<title>DUCK SiS</title>
     <style>
+        .duck-sis-container{
+            text-align:center;
+        }
         .duck-products-row { display:flex;
             flex-direction:row;
             flex-wrap:wrap;
             justify-content:space-evenly;
-            align-items:stretch;
-            align-content:space-between;
+            align-items:flex-start;
+            align-content:flex-start;
+            width:100%;
+            margin:2em;
         }
-        .duck-row-item { width:150px;}
+        .duck-row-item {
+            width:180px;
+        }
         .duck-thumbnail {
             display:flex;
             flex-direction:column;
@@ -19,39 +26,83 @@
             justify-content:center;
             align-items:center;
             height:auto;
-            transition:.6s ease-in-out;
+            transition:.4s ease-in-out;
+            margin:20px;
         }
         .duck-thumbnail > img {
             display:block;
-            width:80%;
+            width:100%;
             transition:.4s ease-in-out;
-            height:300px;
+            height:auto;
         }
-        
-        .duck-thumbnail > h4 {
-            display:block;
-            background-color: #0092d4;
-            color:white;
-            padding:1rem;
-            border-radius:8px;
-            font-size:.8rem;
+
+        div.duck-thumbnail > h4 {
+            display: block;
+            border: 3px solid #0092d4;
+            color:#0092d4;
+            color:#0092d4;
+            padding:.7rem;
+            border-radius:30px 30px 3px 3px;
+            font-size:.9rem;
             font-weight:700;
-            border:2px solid #0092d4;
+            transition:0.4s;
+
         }
-        .duck-row-item:hover .duck-thumbnail > img { transform:scale(1.1,1.1);}
-        .duck-row-item:hover h4 {background-color:white; color:#0092d4; border-color:#0092d4; border:2px solid;}
+        .duck-sis-media {display:grid; }
+        div.duck-row-item:hover .duck-thumbnail > img { transform:scale(1.1,1.1); }
+        div.duck-row-item:hover h4 {background-color:#0092d4; color:white!important; border-color:#0092d4;}
         a{
             text-decoration:none;
             text-align:center;
         }
+        .duck-section-header{
+            display:block;
+        }
+        .duck-section-header > img{
+            width:100%;
+        }
+        
+        @media only screen and (max-width: 600px){
+            .duck-thumbnail { margin:35px;}
+        }
     </style>
 </head>
 <body>
+    <div class="duck-sis-container">
+    <!-- Duck banner and products row-->
+    <div class="duck-section-header"><img src="images/duck_general_2.jpg" alt="" /></div>
+    <div class="duck-section-header"><img src="images/duck_general_1.jpg" alt=""/></div>
 	<div class="duck-products-row">
+        
 		<div class="duck-row-item duck-item-1"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509006_1.jpg" alt="" /></div></a></div>
         <div class="duck-row-item duck-item-2"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/512066_1.jpg" alt="" /></div></a></div>
         <div class="duck-row-item duck-item-3"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/512483_1.jpg" alt="" /></div></a></div>
         <div class="duck-row-item duck-item-4"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509007_1.jpg" alt="" /></div></a></div>
+	</div><!-- end of section-->
+
+    <!-- Duck banner and products row-->
+    <div class="duck-section-header"><img src="images/duck_banner.png" alt="" /></div>
+    <div class="duck-products-row">
+        
+		<div class="duck-row-item duck-item-1"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/652769_1.jpg" alt="" /></div></a></div>
+        <div class="duck-row-item duck-item-2"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509436_1.jpg" alt="" /></div></a></div>
+        <div class="duck-row-item duck-item-3"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509435_1.jpg" alt="" /></div></a></div>
+        <div class="duck-row-item duck-item-4"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509443_1.jpg" alt="" /></div></a></div>
 	</div>
+    <!-- end of section-->
+    <!-- Duck banner and products row-->
+    <div class="duck-section-header"><img src="images/duck_active_clean_banner.jpg" alt="" /></div>
+    <div class="duck-products-row">
+        
+		<div class="duck-row-item duck-item-1"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509205_1.jpg" alt="" /></div></a></div>
+        <div class="duck-row-item duck-item-2"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509207_1.jpg" alt="" /></div></a></div>
+        <div class="duck-row-item duck-item-3"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509208_1.jpg" alt="" /></div></a></div>
+        <div class="duck-row-item duck-item-4"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509839_1.jpg" alt="" /></div></a></div>
+	</div>
+    <!-- end of section-->
+	<div class="duck-sis-media">
+		
+	</div>
+    </div>
 </body>
 </html>
