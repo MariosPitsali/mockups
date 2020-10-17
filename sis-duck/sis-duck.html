@@ -4,6 +4,8 @@
 	<meta charset="UTF-8" />
 	<title>DUCK SiS</title>
     <style>
+        
+        * {transition:.4s;}
         .duck-sis-container{
             text-align:center;
         }
@@ -14,10 +16,11 @@
             align-items:flex-start;
             align-content:flex-start;
             width:100%;
-            margin:2em;
+            margin:1em;
         }
         .duck-row-item {
-            width:175px;
+            width:160px;
+            vertical-align:middle;
         }
         .duck-thumbnail {
             display:flex;
@@ -34,13 +37,13 @@
             width:100%;
             transition:.4s ease-in-out;
             height:auto;
+            padding:1.5em;
         }
 
         div.duck-thumbnail > h4 {
             display: block;
-            border: 3px solid #0092d4;
-            color:#0092d4;
-            color:#0092d4;
+            border: 3px solid #007fc6;
+            color:#007fc6;
             padding:.7rem;
             border-radius:30px 30px 3px 3px;
             font-size:.9rem;
@@ -48,9 +51,9 @@
             transition:0.4s;
 
         }
-        .duck-sis-media {display:grid; }
-        div.duck-row-item:hover .duck-thumbnail > img { transform:scale(1.1,1.1); }
-        div.duck-row-item:hover h4 {background-color:#0092d4; color:white!important; border-color:#0092d4;}
+
+        div.duck-row-item:hover .duck-thumbnail > img { transform:scale(1.15,1.15); }
+        div.duck-row-item:hover h4 {background-color:#df3735; color:white!important; border-color:#df3735;}
         a{
             text-decoration:none;
             text-align:center;
@@ -61,45 +64,57 @@
         .duck-section-header > img{
             width:100%;
         }
+        div.duck-gif-item{
+            background-color:red;
+        }
+        div.duck-gif-item > img {
+            width:100%;
+            /*box-shadow:5px 0px 10px #df3735;*/
+        }
+        @media only screen and (max-width:810px){
+            div.duck-row-item {width:110px;}
+            div.duck-row-item h4 {font-size:.65rem; padding:.3rem; font-weight:500; border-width:2px;}
+            div.duck-thumbnail > h4 { border-radius: 10px 10px 1px 1px;}
+            .duck-thumbnail > img {padding:1em;}
+        }
 
     </style>
 </head>
 <body>
     <div class="duck-sis-container">
     <!-- Duck banner and products row-->
-    <div class="duck-section-header"><img src="images/duck_general_2.jpg" alt="" /></div>
     <div class="duck-section-header"><img src="images/duck_general_1.jpg" alt=""/></div>
 	<div class="duck-products-row">
         
 		<div class="duck-row-item duck-item-1"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509006_1.jpg" alt="" /></div></a></div>
-        <div class="duck-row-item duck-item-2"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/512066_1.jpg" alt="" /></div></a></div>
-        <div class="duck-row-item duck-item-3"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/512483_1.jpg" alt="" /></div></a></div>
-        <div class="duck-row-item duck-item-4"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509007_1.jpg" alt="" /></div></a></div>
+        <div class="duck-row-item duck-item-2"><a href="https://eshop.mymarket.gr/oikiaki-frontida-chartika/katharistika-spitiou/gia-to-mpanio/duck-ygro-wc-marine-750ml-11-doro"><div class="duck-thumbnail"><h4>Duck Υγρό WC Floral Fantasy 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/512066_1.jpg" alt="" /></div></a></div>
+        <div class="duck-row-item duck-item-3"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Λευκαντικό Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/512483_1.jpg" alt="" /></div></a></div>
+        <div class="duck-row-item duck-item-4"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Πεύκο 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509007_1.jpg" alt="" /></div></a></div>
+        <div class="duck-row-item duck-gif-item"><img src="images/DUCK_DEEP_ACTION_GEL_Gif.gif" alt="" /></div>
 	</div><!-- end of section-->
 
     <!-- Duck banner and products row-->
     <div class="duck-section-header"><img src="images/duck_banner.png" alt="" /></div>
     <div class="duck-products-row">
-        
-		<div class="duck-row-item duck-item-1"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/652769_1.jpg" alt="" /></div></a></div>
-        <div class="duck-row-item duck-item-2"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509436_1.jpg" alt="" /></div></a></div>
-        <div class="duck-row-item duck-item-3"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509435_1.jpg" alt="" /></div></a></div>
-        <div class="duck-row-item duck-item-4"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509443_1.jpg" alt="" /></div></a></div>
+		<div class="duck-row-item duck-item-1"><a href="https://eshop.mymarket.gr/oikiaki-frontida-chartika/katharistika-spitiou/gia-to-mpanio/duck-fresh-discs-lavender-36ml"><div class="duck-thumbnail"><h4>Duck Fresh Discs Lavender</h4><img src="https://eshop.mymarket.gr/images/652769_1.jpg" alt="" /></div></a></div>
+        <div class="duck-row-item duck-item-2"><a href="https://eshop.mymarket.gr/oikiaki-frontida-chartika/katharistika-spitiou/gia-to-mpanio/duck-fresh-discs-lime-zest-36ml"><div class="duck-thumbnail"><h4>Duck Fresh Discs Lime Zest</h4><img src="https://eshop.mymarket.gr/images/509436_1.jpg" alt="" /></div></a></div>
+        <div class="duck-row-item duck-item-3"><a href="https://eshop.mymarket.gr/oikiaki-frontida-chartika/katharistika-spitiou/gia-to-mpanio/duck-fresh-discs-marine-36ml"><div class="duck-thumbnail"><h4>Duck Fresh Discs Marine</h4><img src="https://eshop.mymarket.gr/images/509435_1.jpg" alt="" /></div></a></div>
+        <div class="duck-row-item duck-item-4"><a href="https://eshop.mymarket.gr/oikiaki-frontida-chartika/katharistika-spitiou/gia-to-mpanio/duck-fresh-discs-floral-fantasy"><div class="duck-thumbnail"><h4>Duck Fresh Discs Floral Fantasy</h4><img src="https://eshop.mymarket.gr/images/509443_1.jpg" alt="" /></div></a></div>
+        <div class="duck-row-item duck-gif-item" ><img style="width:100%;" src="images/DUCK_FRESH_DISCS_GIF.gif" alt="" /></div>
 	</div>
     <!-- end of section-->
     <!-- Duck banner and products row-->
     <div class="duck-section-header"><img src="images/duck_active_clean_banner.jpg" alt="" /></div>
     <div class="duck-products-row">
         
-		<div class="duck-row-item duck-item-1"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509205_1.jpg" alt="" /></div></a></div>
-        <div class="duck-row-item duck-item-2"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509207_1.jpg" alt="" /></div></a></div>
-        <div class="duck-row-item duck-item-3"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509208_1.jpg" alt="" /></div></a></div>
-        <div class="duck-row-item duck-item-4"><a href="https://eshop.mymarket.gr"><div class="duck-thumbnail"><h4>Duck Υγρό WC Marine 750ml 1+1 Δώρο</h4><img src="https://eshop.mymarket.gr/images/509839_1.jpg" alt="" /></div></a></div>
+		<div class="duck-row-item duck-item-1"><a href="https://eshop.mymarket.gr/oikiaki-frontida-chartika/katharistika-spitiou/gia-to-mpanio/duck-active-clean-marine"><div class="duck-thumbnail"><h4>Duck Active Clean Marine</h4><img src="https://eshop.mymarket.gr/images/509205_1.jpg" alt="" /></div></a></div>
+        <div class="duck-row-item duck-item-2"><a href="https://eshop.mymarket.gr/oikiaki-frontida-chartika/katharistika-spitiou/gia-to-mpanio/duck-active-clean-dazling-petals"><div class="duck-thumbnail"><h4>Duck Active Clean Dazling Petals</h4><img src="https://eshop.mymarket.gr/images/509207_1.jpg" alt="" /></div></a></div>
+        <div class="duck-row-item duck-item-3"><a href="https://eshop.mymarket.gr/oikiaki-frontida-chartika/katharistika-spitiou/gia-to-mpanio/duck-active-clean-tropical-sunshine-0"><div class="duck-thumbnail"><h4>Duck Active Clean Tropical Sunshine</h4><img src="https://eshop.mymarket.gr/images/509208_1.jpg" alt="" /></div></a></div>
+        <div class="duck-row-item duck-item-4"><a href="https://eshop.mymarket.gr/oikiaki-frontida-chartika/katharistika-spitiou/gia-to-mpanio/duck-active-clean-floral-fantasy-386gr"><div class="duck-thumbnail"><h4>Duck Active Clean Floral Fantasy</h4><img src="https://eshop.mymarket.gr/images/509839_1.jpg" alt="" /></div></a></div>
+        <div class="duck-row-item duck-gif-item"><img src="images/DUCK_Gif-3.gif" alt="" /></div>
 	</div>
     <!-- end of section-->
-	<div class="duck-sis-media">
-		
-	</div>
+	<div class="duck-section-header"><img src="images/duck_general_2.jpg" alt="" /></div>
     </div>
 </body>
 </html>
